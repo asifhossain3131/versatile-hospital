@@ -4,6 +4,7 @@ import SectionTitle from '../section title/SectionTitle';
 import { Button, Card, CardBody, CardHeader, Chip, Dialog, DialogBody, DialogFooter, DialogHeader, Typography } from '@material-tailwind/react';
 import Image from 'next/image';
 import { UserIcon, CalendarDaysIcon, BookmarkIcon } from "@heroicons/react/24/solid";
+import { ArrowLongRightIcon } from '@heroicons/react/24/outline';
 
 const HomeBlogs = () => {
    const allBlogs= [
@@ -101,7 +102,7 @@ const HomeBlogs = () => {
                       </div>
                       <div className='mt-2'>
                         <h1 className='text-2xl'>{title}</h1>
-                        <button onClick={()=>handleModal(id)} className=" text-blue-800 font-medium">View Blog</button>
+                        <button onClick={()=>handleModal(id)} className=" text-blue-800 font-medium flex text-sm items-center gap-x-2">View Blog <ArrowLongRightIcon strokeWidth={2} className="h-5 w-5" /></button>
                        </div>
                 </div>
                 )
