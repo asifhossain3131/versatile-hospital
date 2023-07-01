@@ -1,6 +1,8 @@
 'use client'
 import Image from 'next/image';
 import React from 'react';
+import SectionTitle from '../section title/SectionTitle';
+
 
 const HomeGallery = () => {
     const images=[
@@ -43,7 +45,7 @@ const HomeGallery = () => {
     ]
     return (
         <div>
-          <h1>Gallery</h1>
+           <SectionTitle title='our gallery' subtitle='Serving you makes us happy and brings our achivements that makes us proud'></SectionTitle>
           <div className='grid grid-cols-2 lg:grid-cols-3 gap-4 mx-12'>
             {
                 images.map(({id,img})=>
