@@ -2,6 +2,7 @@
 import React from 'react';
 import {UserIcon } from "@heroicons/react/24/outline";
 import { Button } from "@material-tailwind/react";
+import Link from 'next/link';
 
 
 const SubHeader = () => {
@@ -15,7 +16,7 @@ const SubHeader = () => {
             <div className='flex items-center gap-x-3'>
                 <div className='flex items-center gap-x-1 text-md'>
                     <UserIcon className='w-[20px]'></UserIcon>
-                    <button>Login</button>
+                   <Link href='/login'><button>Login</button></Link>
                 </div>
                 <Button
                 variant="gradient"
