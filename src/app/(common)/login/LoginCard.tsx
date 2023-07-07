@@ -48,7 +48,7 @@ const LoginCard = () => {
           <Typography color="gray" className="mt-4 text-center font-normal">
             Do not have an account?
             <Link
-             href={'/register'}
+             href={'/registration'}
               className="font-medium text-blue-500 transition-colors ml-2 hover:text-blue-700"
             >
              Register

@@ -1,0 +1,600 @@
+[
+    {
+      "name": "Dr. John Smith",
+      "department": "Cardiology",
+      "title": "Consultant",
+      "rank": "Senior",
+      "experiences": [
+        {
+          "workplace": "ABC Hospital",
+          "years": 8
+        },
+        {
+          "workplace": "XYZ Medical Center",
+          "years": 5
+        }
+      ],
+      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Doctor of Medicine (MD)",
+      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
+    },
+    {
+      "name": "Dr. Emily Johnson",
+      "department": "Pediatrics",
+      "title": "Pediatrician",
+      "rank": "Junior",
+      "experiences": [
+        {
+          "workplace": "DEF Children's Hospital",
+          "years": 4
+        },
+        {
+          "workplace": "GHI Pediatrics Clinic",
+          "years": 3
+        }
+      ],
+      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Diploma in Child Health (DCH)",
+      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
+    },
+    {
+      "name": "Dr. Sarah Thompson",
+      "department": "Dermatology",
+      "title": "Dermatologist",
+      "rank": "Senior",
+      "experiences": [
+        {
+          "workplace": "JKL Dermatology Center",
+          "years": 10
+        },
+        {
+          "workplace": "MNO Skin Clinic",
+          "years": 6
+        }
+      ],
+      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Master of Science in Dermatology (MD)",
+      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
+    },
+    {
+      "name": "Dr. Robert Davis",
+      "department": "Orthopedics",
+      "title": "Orthopedic Surgeon",
+      "rank": "Senior",
+      "experiences": [
+        {
+          "workplace": "PQR Orthopedic Hospital",
+          "years": 12
+        },
+        {
+          "workplace": "STU Sports Medicine Center",
+          "years": 8
+        }
+      ],
+      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Doctor of Medicine (MD), Fellowship in Orthopedic Surgery",
+      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
+    },
+    {
+      "name": "Dr. Anna Wilson",
+      "department": "Ophthalmology",
+      "title": "Ophthalmologist",
+      "rank": "Senior",
+      "experiences": [
+        {
+          "workplace": "UVW Eye Hospital",
+          "years": 15
+        },
+        {
+          "workplace": "XYZ Vision Clinic",
+          "years": 6
+        }
+      ],
+      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Master of Science in Ophthalmology (MS)",
+      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
+    },
+    {
+      "name": "Dr. Michael Anderson",
+      "department": "Gastroenterology",
+      "title": "Gastroenterologist",
+      "rank": "Senior",
+      "experiences": [
+        {
+          "workplace": "LMN Gastro Hospital",
+          "years": 10
+        },
+        {
+          "workplace": "OPQ Digestive Care Center",
+          "years": 7
+        }
+      ],
+      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Doctor of Medicine (MD), Fellowship in Gastroenterology",
+      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
+    },
+    {
+      "name": "Dr. Sophia Lee",
+      "department": "Neurology",
+      "title": "Neurologist",
+      "rank": "Senior",
+      "experiences": [
+        {
+          "workplace": "RST Neuro Hospital",
+          "years": 14
+        },
+        {
+          "workplace": "UVW Neuro Clinic",
+          "years": 9
+        }
+      ],
+      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Doctor of Medicine (MD), Residency in Neurology",
+      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
+    },
+    {
+      "name": "Dr. William Brown",
+      "department": "ENT",
+      "title": "ENT Specialist",
+      "rank": "Senior",
+      "experiences": [
+        {
+          "workplace": "XYZ ENT Hospital",
+          "years": 11
+        },
+        {
+          "workplace": "MNO Ear, Nose, and Throat Clinic",
+          "years": 8
+        }
+      ],
+      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Master of Science in Otorhinolaryngology (MS)",
+      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
+    },
+    {
+      "name": "Dr. Olivia Davis",
+      "department": "Obstetrics and Gynecology",
+      "title": "Obstetrician-Gynecologist",
+      "rank": "Senior",
+      "experiences": [
+        {
+          "workplace": "UVW Women's Hospital",
+          "years": 13
+        },
+        {
+          "workplace": "RST Women's Clinic",
+          "years": 7
+        }
+      ],
+      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Master of Science in Obstetrics and Gynecology (MS)",
+      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
+    },
+    {
+      "name": "Dr. Daniel Wilson",
+      "department": "Dentistry",
+      "title": "Dentist",
+      "rank": "Junior",
+      "experiences": [
+        {
+          "workplace": "ABC Dental Clinic",
+          "years": 3
+        },
+        {
+          "workplace": "DEF Dental Care Center",
+          "years": 2
+        }
+      ],
+      "academic_qualifications": "Bachelor of Dental Surgery (BDS), Doctor of Dental Surgery (DDS)",
+      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
+    },
+    {
+      "name": "Dr. Lily Johnson",
+      "department": "Psychiatry",
+      "title": "Psychiatrist",
+      "rank": "Senior",
+      "experiences": [
+        {
+          "workplace": "GHI Mental Health Hospital",
+          "years": 11
+        },
+        {
+          "workplace": "JKL Psychiatry Center",
+          "years": 6
+        },
+          {
+        "workplace": "MNO Skin Clinic",
+        "years": 6
+      }
+    ],
+    "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Master of Science in Dermatology (MD)",
+    "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
+  },
+    {
+      "name": "Dr. John Smith",
+      "department": "Cardiology",
+      "title": "Consultant",
+      "rank": "Senior",
+      "experiences": [
+        {
+          "workplace": "ABC Hospital",
+          "years": 8
+        },
+        {
+          "workplace": "XYZ Medical Center",
+          "years": 5
+        }
+      ],
+      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Doctor of Medicine (MD)",
+      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
+    },
+    {
+      "name": "Dr. Emily Johnson",
+      "department": "Pediatrics",
+      "title": "Pediatrician",
+      "rank": "Junior",
+      "experiences": [
+        {
+          "workplace": "DEF Children's Hospital",
+          "years": 4
+        },
+        {
+          "workplace": "GHI Pediatrics Clinic",
+          "years": 3
+        }
+      ],
+      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Diploma in Child Health (DCH)",
+      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
+    },
+    {
+      "name": "Dr. Sarah Thompson",
+      "department": "Dermatology",
+      "title": "Dermatologist",
+      "rank": "Senior",
+      "experiences": [
+        {
+          "workplace": "JKL Dermatology Center",
+          "years": 10
+        },
+        {
+          "workplace": "MNO Skin Clinic",
+          "years": 6
+        }
+      ],
+      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Master of Science in Dermatology (MD)",
+      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
+    },
+    {
+      "name": "Dr. Robert Davis",
+      "department": "Orthopedics",
+      "title": "Orthopedic Surgeon",
+      "rank": "Senior",
+      "experiences": [
+        {
+          "workplace": "PQR Orthopedic Hospital",
+          "years": 12
+        },
+        {
+          "workplace": "STU Sports Medicine Center",
+          "years": 8
+        }
+      ],
+      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Doctor of Medicine (MD), Fellowship in Orthopedic Surgery",
+      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
+    },
+    {
+      "name": "Dr. Anna Wilson",
+      "department": "Ophthalmology",
+      "title": "Ophthalmologist",
+      "rank": "Senior",
+      "experiences": [
+        {
+          "workplace": "UVW Eye Hospital",
+          "years": 15
+        },
+        {
+          "workplace": "XYZ Vision Clinic",
+          "years": 6
+        }
+      ],
+      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Master of Science in Ophthalmology (MS)",
+      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
+    },
+    {
+      "name": "Dr. Michael Anderson",
+      "department": "Gastroenterology",
+      "title": "Gastroenterologist",
+      "rank": "Senior",
+      "experiences": [
+        {
+          "workplace": "LMN Gastro Hospital",
+          "years": 10
+        },
+        {
+          "workplace": "OPQ Digestive Care Center",
+          "years": 7
+        }
+      ],
+      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Doctor of Medicine (MD), Fellowship in Gastroenterology",
+      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
+    },
+    {
+      "name": "Dr. Sophia Lee",
+      "department": "Neurology",
+      "title": "Neurologist",
+      "rank": "Senior",
+      "experiences": [
+        {
+          "workplace": "RST Neuro Hospital",
+          "years": 14
+        },
+        {
+          "workplace": "UVW Neuro Clinic",
+          "years": 9
+        }
+      ],
+      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Doctor of Medicine (MD), Residency in Neurology",
+      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
+    },
+    {
+      "name": "Dr. William Brown",
+      "department": "ENT",
+      "title": "ENT Specialist",
+      "rank": "Senior",
+      "experiences": [
+        {
+          "workplace": "XYZ ENT Hospital",
+          "years": 11
+        },
+        {
+          "workplace": "MNO Ear, Nose, and Throat Clinic",
+          "years": 8
+        }
+      ],
+      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Master of Science in Otorhinolaryngology (MS)",
+      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
+    },
+    {
+      "name": "Dr. Olivia Davis",
+      "department": "Obstetrics and Gynecology",
+      "title": "Obstetrician-Gynecologist",
+      "rank": "Senior",
+      "experiences": [
+        {
+          "workplace": "UVW Women's Hospital",
+          "years": 13
+        },
+        {
+          "workplace": "RST Women's Clinic",
+          "years": 7
+        }
+      ],
+      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Master of Science in Obstetrics and Gynecology (MS)",
+      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
+    },
+    {
+      "name": "Dr. Daniel Wilson",
+      "department": "Dentistry",
+      "title": "Dentist",
+      "rank": "Junior",
+      "experiences": [
+        {
+          "workplace": "ABC Dental Clinic",
+          "years": 3
+        },
+        {
+          "workplace": "DEF Dental Care Center",
+          "years": 2
+        }
+      ],
+      "academic_qualifications": "Bachelor of Dental Surgery (BDS), Doctor of Dental Surgery (DDS)",
+      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
+    },
+    {
+      "name": "Dr. Lily Johnson",
+      "department": "Psychiatry",
+      "title": "Psychiatrist",
+      "rank": "Senior",
+      "experiences": [
+        {
+          "workplace": "GHI Mental Health Hospital",
+          "years": 11
+        },
+        {
+          "workplace": "JKL Psychiatry Center",
+          "years": 6
+        }
+      ],
+      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Master of Science in Psychiatry (MS)",
+      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
+    },
+    {
+      "name": "Dr. Matthew Wilson",
+      "department": "Internal Medicine",
+      "title": "Internal Medicine Specialist",
+      "rank": "Senior",
+      "experiences": [
+        {
+          "workplace": "ABC Medical Center",
+          "years": 15
+        },
+        {
+          "workplace": "DEF General Hospital",
+          "years": 10
+        }
+      ],
+      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Doctor of Medicine (MD), Board Certified in Internal Medicine",
+      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
+    },
+    {
+      "name": "Dr. Olivia Wilson",
+      "department": "Endocrinology",
+      "title": "Endocrinologist",
+      "rank": "Senior",
+      "experiences": [
+        {
+          "workplace": "GHI Endocrine Clinic",
+          "years": 12
+        },
+        {
+          "workplace": "JKL Hormone Center",
+          "years": 8
+        }
+      ],
+      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Master of Science in Endocrinology (MS)",
+      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
+    },
+    {
+      "name": "Dr. Ethan Brown",
+      "department": "Pulmonology",
+      "title": "Pulmonologist",
+      "rank": "Senior",
+      "experiences": [
+        {
+          "workplace": "MNO Chest Hospital",
+          "years": 9
+        },
+        {
+          "workplace": "PQR Respiratory Clinic",
+          "years": 6
+        }
+      ],
+      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Master of Science in Pulmonology (MS)",
+      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
+    },
+    {
+      "name": "Dr. Grace Anderson",
+      "department": "Rheumatology",
+      "title": "Rheumatologist",
+      "rank": "Junior",
+      "experiences": [
+        {
+          "workplace": "STU Rheumatology Center",
+          "years": 3
+        },
+        {
+          "workplace": "UVW Arthritis Clinic",
+          "years": 2
+        }
+      ],
+      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Diploma in Rheumatology (DRheum)",
+      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
+    },
+    {
+      "name": "Dr. Nathan Taylor",
+      "department": "Hematology",
+      "title": "Hematologist",
+      "rank": "Senior",
+      "experiences": [
+        {
+          "workplace": "XYZ Hematology Clinic",
+          "years": 10
+        },
+        {
+          "workplace": "ABC Blood Center",
+          "years": 7
+        }
+      ],
+      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Master of Science in Hematology (MS)",
+      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
+    },
+    {
+      "name": "Dr. Chloe Martin",
+      "department": "Allergy and Immunology",
+      "title": "Allergist-Immunologist",
+      "rank": "Senior",
+      "experiences": [
+        {
+          "workplace": "DEF Allergy Clinic",
+          "years": 9
+        },
+        {
+          "workplace": "GHI Immunology Center",
+          "years": 6
+        }
+      ],
+      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Master of Science in Allergy and Immunology (MS)",
+      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
+    },
+    {
+      "name": "Dr. Samuel Wilson",
+      "department": "Nephrology",
+      "title": "Nephrologist",
+      "rank": "Senior",
+      "experiences": [
+        {
+          "workplace": "JKL Kidney Hospital",
+          "years": 11
+        },
+        {
+          "workplace": "MNO Nephrology Clinic",
+          "years": 7
+        }
+      ],
+      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Master of Science in Nephrology (MS)",
+      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
+    },
+    {
+      "name": "Dr. Grace Thompson",
+      "department": "Gynecology",
+      "title": "Gynecologist",
+      "rank": "Junior",
+      "experiences": [
+        {
+          "workplace": "PQR Women's Clinic",
+          "years": 4
+        },
+        {
+          "workplace": "STU Obstetrics and Gynecology Hospital",
+          "years": 3
+        }
+      ],
+      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Diploma in Gynecology (DGyn)",
+      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
+    },
+    {
+      "name": "Dr. Ethan Wilson",
+      "department": "Oncology",
+      "title": "Oncologist",
+      "rank": "Senior",
+      "experiences": [
+        {
+          "workplace": "UVW Cancer Center",
+          "years": 12
+        },
+        {
+          "workplace": "XYZ Oncology Hospital",
+          "years": 9
+        }
+      ],
+      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Master of Science in Oncology (MS)",
+      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
+    },
+    {
+      "name": "Dr. Natalie Brown",
+      "department": "Dermatology",
+      "title": "Dermatologist",
+      "rank": "Junior",
+      "experiences": [
+        {
+          "workplace": "ABC Dermatology Clinic",
+          "years": 3
+        },
+        {
+          "workplace": "DEF Skin Care Center",
+          "years": 2
+        }
+      ],
+      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Diploma in Dermatology (DDerm)",
+      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
+    },
+    {
+      "name": "Dr. James Wilson",
+      "department": "Gastroenterology",
+      "title": "Gastroenterologist",
+      "rank": "Junior",
+      "experiences": [
+        {
+          "workplace": "GHI Digestive Clinic",
+          "years": 4
+        },
+        {
+          "workplace": "JKL Gastro Hospital",
+          "years": 3
+        }
+      ],
+      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Diploma in Gastroenterology (DGastro)",
+      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
+    }
+]

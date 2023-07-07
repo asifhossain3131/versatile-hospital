@@ -83,7 +83,7 @@ const HomeBlogs = () => {
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-4 mx-8'>
                {
                 allBlogs.map(({id,title,category,img,author,date,published_in,full_blog})=>
-                <div key={id} className='w-96'>
+                <div key={id} className='w-96 shadow-lg p-4'>
                      <Image alt='blog' width={384} height={350} src={img}></Image>
                       <Chip variant="ghost" value={category} className='w-32 text-center my-4'/>
                       <div className='flex items-center justify-between'>

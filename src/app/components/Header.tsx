@@ -32,14 +32,15 @@ const Header = () => {
         Home
       </Typography>
     </Link>
-      <Typography
+    <Link href='/findDoctors'>
+    <Typography
         as="li"
         variant="small"
         color="blue-gray"
         className="p-1 font-normal"
       >
         Find a doctor
-      </Typography>
+      </Typography></Link>
       <Typography
         as="li"
         variant="small"
