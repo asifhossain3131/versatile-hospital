@@ -31,7 +31,7 @@ const FindDoctorsPage = async() => {
             }
           ],
           "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Doctor of Medicine (MD)",
-          "image": "https://example.com/drjohnsmith.jpg"
+          "image": "https://img.freepik.com/free-photo/smiling-doctor-with-strethoscope-isolated-grey_651396-974.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=sph"
         },
         {
           "name": "Dr. Emily Johnson",
@@ -49,7 +49,7 @@ const FindDoctorsPage = async() => {
             }
           ],
           "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Diploma in Child Health (DCH)",
-          "image": "https://example.com/dremilyjohnson.jpg"
+          "image": "https://img.freepik.com/free-photo/portrait-successful-young-doctor-with-folder-stethoscope_1262-12410.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=sph"
         },
         {
           "name": "Dr. Sarah Thompson",
@@ -67,7 +67,7 @@ const FindDoctorsPage = async() => {
             }
           ],
           "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Master of Science in Dermatology (MD)",
-          "image": "https://example.com/drsarahthompson.jpg"
+          "image": "https://img.freepik.com/free-photo/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture_409827-254.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=sph"
         },
         {
           "name": "Dr. Robert Davis",
@@ -85,17 +85,17 @@ const FindDoctorsPage = async() => {
             }
           ],
           "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Doctor of Medicine (MD), Fellowship in Orthopedic Surgery",
-          "image": "https://example.com/drrobertdavis.jpg"
+          "image": "https://img.freepik.com/free-photo/portrait-smiling-handsome-male-doctor-man_171337-5055.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=sph"
         }]
     return (
     <div>
         <PrimaryBanner></PrimaryBanner>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
             {
-                allDoctors.map(({name,department,title,rank},i)=>
+                allDoctors.map(({name,department,title,rank,image},i)=>
                 <Card key={i} className="w-96">
       <CardHeader floated={false} className="">
-        <img src="https://img.freepik.com/free-photo/smiling-doctor-with-strethoscope-isolated-grey_651396-974.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=sph" alt="profile-picture" />
+        <img src={image} />
       </CardHeader>
       <CardBody className="text-center">
         <Typography variant="h4" color="blue-gray" className="mb-2">

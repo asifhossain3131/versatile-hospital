@@ -46,7 +46,8 @@ const SubHeader = () => {
             </Typography>
           </CardHeader>
           <CardBody className="flex flex-col gap-4">
-            <Input label="Patient name" size="lg" />
+            <Input label="Patient name" size="lg"/>
+            <Input label="Patient email" size="lg" />
             <Input label="Illness" size="lg" />
             <div className="w-full">
       <Select label="Choose a department">
