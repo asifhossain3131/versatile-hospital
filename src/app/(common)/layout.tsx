@@ -4,6 +4,7 @@ import SubHeader from '../components/SubHeader';
 import Footer from '../components/Footer';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Providers from '@/providers';
 
 interface LayoutProps {
     children: ReactNode;
@@ -11,7 +12,8 @@ interface LayoutProps {
 
 const Common: React.FC<LayoutProps> = ({ children }) => {
     return (
-        <div>
+      <Providers>
+          <div>
             <ToastContainer />
             <SubHeader></SubHeader>
             <Header></Header>
@@ -20,6 +22,7 @@ const Common: React.FC<LayoutProps> = ({ children }) => {
             </div>
             <Footer></Footer>
         </div>
+      </Providers>
     );
 };
 

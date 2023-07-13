@@ -1,6 +1,7 @@
 import AuthContext from "@/contexts/AuthContext";
 import auth, { googleProvider } from "@/firebase/firebase.auth";
-import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
+import createJWT from "@/utils/createJWT";
+import { User, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import React, { ReactNode, useEffect, useState } from 'react';
 
 interface AuthProviderProps {
@@ -8,54 +9,52 @@ interface AuthProviderProps {
 }
 
 const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
- // hooks
- const [user,setUser]=useState(null)
- const[loading,setLoading]=useState(true)
+  // hooks
+  const [user, setUser] = useState<User | null>(null);
+  const [loading, setLoading] = useState<boolean>(true);
 
- // authentications functionalities
- const createUser=(email:string,password:string)=>{
-     setLoading(true)
-     return createUserWithEmailAndPassword(auth,email,password)
- }
+  // authentication functionalities
+  const createUser = (email: string, password: string) => {
+    setLoading(true);
+    return createUserWithEmailAndPassword(auth, email, password);
+  };
 
- const profileUpdate=(name:string,photo:string)=>{
-     setLoading(true)
-     return updateProfile(auth.currentUser,{
-         displayName:name,
-         photoURL:photo
-     })
- }
+  const profileUpdate = (name: string, photo: string) => {
+    setLoading(true);
+    return updateProfile(auth.currentUser as User, {
+      displayName: name,
+      photoURL: photo
+    });
+  };
 
- const signIn=(email:string,password:string)=>{
-     setLoading(true)
-     return signInWithEmailAndPassword(auth,email,password)
- }
+  const signIn = (email: string, password: string) => {
+    setLoading(true);
+    return signInWithEmailAndPassword(auth, email, password);
+  };
 
-const googleLogin=()=>{
- setLoading(true)
- return signInWithPopup(auth,googleProvider)
-}
+  const googleLogin = () => {
+    setLoading(true);
+    return signInWithPopup(auth, googleProvider);
+  };
 
-// const gitLogin=()=>{
-//  setLoading(true)
-//  return signInWithPopup(auth,gitProvider)
-// }
+  const logOut = () => {
+    setLoading(true);
+    return signOut(auth);
+  };
 
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+      setUser(currentUser);
+      if(currentUser && currentUser.email){
+        const user={email:currentUser.email}
+        createJWT(user)
+        setLoading(false);
+      }
+    });
+    return () => unsubscribe();
+  }, []);
 
- const logOut=()=>{
-     setLoading(true)
-     return signOut(auth)
- }
-
- useEffect(()=>{
-     const unsubscribe=onAuthStateChanged(auth,currentUser=>{
-         setUser(currentUser)
-         setLoading(false)  
-     })
-     return ()=>unsubscribe()
- },[])
-
- // context values 
+  // context values
   const authContextValue = {
     user,
     loading,
@@ -63,7 +62,6 @@ const googleLogin=()=>{
     profileUpdate,
     signIn,
     googleLogin,
-    // gitLogin,
     logOut
   };
 

@@ -9,18 +9,42 @@ import {
   import { EyeIcon,EyeSlashIcon } from "@heroicons/react/24/solid";
 import { useState } from "react";
 import Link from "next/link";
+import useAuth from "@/hooks/useAuth";
+import { useForm, SubmitHandler } from "react-hook-form"
 
+type Inputs = {
+  email:string
+  password:string
+}
 const LoginCard = () => {
     const [hidden,setHidden]=useState(true)
+    const{signIn}=useAuth()
+    const {
+      register,
+      handleSubmit,
+      reset,
+      formState: { errors },
+    } = useForm<Inputs>()
+    const formSubmit: SubmitHandler<Inputs> = (data) => {
+     const{email,password}=data
+   signIn(email,password)
+   .then((res:any)=>{
+    reset()
+    console.log('login successful')
+   })
+   .catch((err:any)=>{
+    console.log(err.message)
+   })
+    }
     return (
         <Card color="white" className="absolute top-6 left-8 lg:left-16 p-4" shadow={false}>
         <Typography variant="h4" color="blue-gray">
          Login
         </Typography>
-        <form className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96">
+        <form  onSubmit={handleSubmit(formSubmit)} className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96">
           <div className="mb-4 flex flex-col gap-6">
-            <Input type="email" size="lg" label="Email" />
-            <Input type={hidden? 'password':'text'} label="Password" icon={hidden? <EyeIcon onClick={()=>setHidden(!hidden)} className="cursor-pointer"></EyeIcon> : <EyeSlashIcon className="cursor-pointer" onClick={()=>setHidden(!hidden)}></EyeSlashIcon>} />
+            <Input {...register("email", { required: true })} type="email" size="lg" label="Email" />
+            <Input {...register("password", { required: true })} type={hidden? 'password':'text'} label="Password" icon={hidden? <EyeIcon onClick={()=>setHidden(!hidden)} className="cursor-pointer"></EyeIcon> : <EyeSlashIcon className="cursor-pointer" onClick={()=>setHidden(!hidden)}></EyeSlashIcon>} />
           </div>
           <Checkbox
             label={
@@ -42,7 +66,7 @@ const LoginCard = () => {
             }
             containerProps={{ className: "-ml-2.5" }}
           />
-          <Button className="mt-6" fullWidth>
+          <Button type="submit" className="mt-6" fullWidth>
             Login
           </Button>
           <Typography color="gray" className="mt-4 text-center font-normal">

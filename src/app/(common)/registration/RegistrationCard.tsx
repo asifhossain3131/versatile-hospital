@@ -1,10 +1,36 @@
 "use client";
 import { Card, Input, Button, Typography } from "@material-tailwind/react";
-import { EyeIcon, EyeSlashIcon } from "@heroicons/react/24/solid";
 import { useState } from "react";
 import Link from "next/link";
+import { useForm, SubmitHandler } from "react-hook-form"
+import useAuth from "@/hooks/useAuth";
 
+type Inputs = {
+  name: string
+  phoneNumber: string
+  email:string
+  password:string
+}
 const RegistrationCard = () => {
+  const{createUser,profileUpdate}=useAuth()
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm<Inputs>()
+  const formSubmit: SubmitHandler<Inputs> = (data) => {
+   const{name,phoneNumber,email,password}=data
+ createUser(email,password)
+ .then((res:any)=>{
+  profileUpdate(name)
+  reset()
+  console.log(res.user)
+ })
+ .catch((err:any)=>{
+  console.log(err.message)
+ })
+  }
   return (
     <Card
       color="white"
@@ -14,14 +40,14 @@ const RegistrationCard = () => {
       <Typography variant="h4" color="blue-gray">
         Create an account
       </Typography>
-      <form className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96">
+      <form onSubmit={handleSubmit(formSubmit)} className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96"> 
         <div className="mb-4 flex flex-col gap-6">
-          <Input type="text" size="lg" label="Name" />
-          <Input type="te;" size="lg" label="Phone number" />
-          <Input type="email" size="lg" label="Email" />
-          <Input type="password" size="lg" label="Password" />
+          <Input {...register("name", { required: true })} type="text" size="lg" label="Name" />
+          <Input  {...register("phoneNumber", { required: true })} type="tel" size="lg" label="Phone number" />
+          <Input  {...register("email", { required: true })} type="email" size="lg" label="Email" />
+          <Input  {...register("password", { required: true })} type="password" size="lg" label="Password" />
         </div>
-        <Button className="mt-6" fullWidth>
+        <Button type="submit" className="mt-6" fullWidth>
           Register
         </Button>
         <Typography color="gray" className="mt-4 text-center font-normal">
