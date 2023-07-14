@@ -54,9 +54,13 @@ const profileMenuItems = [
 function ProfileMenu() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const closeMenu = () => setIsMenuOpen(false);
-  const handleMenuFunction=(status:string)=>{
+  const handleMenuFunction= async (status:string)=>{
     if(status==='signOut'){
-    logOut()
+    await logOut()
+    const res=await fetch('/api/jwt/logOut',{
+      method:'POST'
+    })
+    const data=await  res.json()
     }
  closeMenu()
   }

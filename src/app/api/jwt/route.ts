@@ -9,7 +9,6 @@ const secret = new TextEncoder().encode(process.env.JWT_TOKEN)
   
   const jwt = await new SignJWT(body)
     .setProtectedHeader({ alg })
-    .setAudience('urn:example:audience')
     .setExpirationTime('2h')
     .sign(secret)
      

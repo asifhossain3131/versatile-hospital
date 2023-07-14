@@ -48,7 +48,9 @@ const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
       if(currentUser && currentUser.email){
         const user={email:currentUser.email}
         createJWT(user)
-        setLoading(false);
+        .then((res:any)=>{
+          setLoading(false);
+        })
       }
     });
     return () => unsubscribe();
