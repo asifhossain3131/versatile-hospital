@@ -253,19 +253,19 @@
   },
   {
     "name": "Dr. Sophia King",
-    "department": "Hematology",
+    "department": "Gastroenterology",
     "degrees": ["MD"],
-    "title": "Hematologist",
+    "title": "Gastroenterologist",
     "rank": "Senior",
     "image": "https://img.freepik.com/free-photo/young-beautiful-doctor-wearing-stethoscope-her-neck_329181-15415.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais",
-    "experiences": ["BCD Hematology Clinic", "EFG Blood Disorders Center"],
+    "experiences": ["BCD Gastrology Clinic", "EFG Blood Disorders Center"],
     "description": "Dr. Sophia King is a highly skilled hematologist specializing in the diagnosis and treatment of blood disorders. She earned her medical degree (MD) and has gained extensive experience working at BCD Hematology Clinic and EFG Blood Disorders Center. Dr. King provides comprehensive care for conditions such as anemia, bleeding disorders, thrombosis, and hematological malignancies. She is dedicated to delivering personalized treatment plans, which may include medication management, blood transfusions, and stem cell transplantation. Dr. Sophia King holds clinic hours from Monday to Thursday, between 9:00 AM and 6:00 PM. The consultation fee for her services is $170.",
     "availableDaysAndTime": "Monday-Thursday, 9:00 AM - 6:00 PM",
     "fees": "$170"
   },
   {
     "name": "Dr. Lucas Cooper",
-    "department": "Gastrointestinal Surgery",
+    "department": "General Surgery",
     "degrees": ["MD"],
     "title": "Gastrointestinal Surgeon",
     "rank": "Junior",
