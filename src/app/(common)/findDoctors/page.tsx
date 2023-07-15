@@ -11,9 +11,6 @@ import {
 
 
 const FindDoctorsPage = async() => {
-    // const res=await fetch('../../../../public/test.json')
-    // const data=await res.json()
-    // console.log(data);
     const allDoctors=[
         {
           "name": "Dr. John Smith",

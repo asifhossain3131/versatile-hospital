@@ -11,6 +11,7 @@ import { useState } from "react";
 import Link from "next/link";
 import useAuth from "@/hooks/useAuth";
 import { useForm, SubmitHandler } from "react-hook-form"
+import { useRouter, useSearchParams } from 'next/navigation'
 
 type Inputs = {
   email:string
@@ -19,6 +20,9 @@ type Inputs = {
 const LoginCard = () => {
     const [hidden,setHidden]=useState(true)
     const{signIn}=useAuth()
+    const search=useSearchParams()
+    const {replace}=useRouter()
+    const from=search.get('redirectUrl') || '/'
     const {
       register,
       handleSubmit,
@@ -30,7 +34,7 @@ const LoginCard = () => {
    signIn(email,password)
    .then((res:any)=>{
     reset()
-    console.log('login successful')
+    replace(from)
    })
    .catch((err:any)=>{
     console.log(err.message)

@@ -1,600 +1,338 @@
 [
-    {
-      "name": "Dr. John Smith",
-      "department": "Cardiology",
-      "title": "Consultant",
-      "rank": "Senior",
-      "experiences": [
-        {
-          "workplace": "ABC Hospital",
-          "years": 8
-        },
-        {
-          "workplace": "XYZ Medical Center",
-          "years": 5
-        }
-      ],
-      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Doctor of Medicine (MD)",
-      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
-    },
-    {
-      "name": "Dr. Emily Johnson",
-      "department": "Pediatrics",
-      "title": "Pediatrician",
-      "rank": "Junior",
-      "experiences": [
-        {
-          "workplace": "DEF Children's Hospital",
-          "years": 4
-        },
-        {
-          "workplace": "GHI Pediatrics Clinic",
-          "years": 3
-        }
-      ],
-      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Diploma in Child Health (DCH)",
-      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
-    },
-    {
-      "name": "Dr. Sarah Thompson",
-      "department": "Dermatology",
-      "title": "Dermatologist",
-      "rank": "Senior",
-      "experiences": [
-        {
-          "workplace": "JKL Dermatology Center",
-          "years": 10
-        },
-        {
-          "workplace": "MNO Skin Clinic",
-          "years": 6
-        }
-      ],
-      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Master of Science in Dermatology (MD)",
-      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
-    },
-    {
-      "name": "Dr. Robert Davis",
-      "department": "Orthopedics",
-      "title": "Orthopedic Surgeon",
-      "rank": "Senior",
-      "experiences": [
-        {
-          "workplace": "PQR Orthopedic Hospital",
-          "years": 12
-        },
-        {
-          "workplace": "STU Sports Medicine Center",
-          "years": 8
-        }
-      ],
-      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Doctor of Medicine (MD), Fellowship in Orthopedic Surgery",
-      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
-    },
-    {
-      "name": "Dr. Anna Wilson",
-      "department": "Ophthalmology",
-      "title": "Ophthalmologist",
-      "rank": "Senior",
-      "experiences": [
-        {
-          "workplace": "UVW Eye Hospital",
-          "years": 15
-        },
-        {
-          "workplace": "XYZ Vision Clinic",
-          "years": 6
-        }
-      ],
-      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Master of Science in Ophthalmology (MS)",
-      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
-    },
-    {
-      "name": "Dr. Michael Anderson",
-      "department": "Gastroenterology",
-      "title": "Gastroenterologist",
-      "rank": "Senior",
-      "experiences": [
-        {
-          "workplace": "LMN Gastro Hospital",
-          "years": 10
-        },
-        {
-          "workplace": "OPQ Digestive Care Center",
-          "years": 7
-        }
-      ],
-      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Doctor of Medicine (MD), Fellowship in Gastroenterology",
-      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
-    },
-    {
-      "name": "Dr. Sophia Lee",
-      "department": "Neurology",
-      "title": "Neurologist",
-      "rank": "Senior",
-      "experiences": [
-        {
-          "workplace": "RST Neuro Hospital",
-          "years": 14
-        },
-        {
-          "workplace": "UVW Neuro Clinic",
-          "years": 9
-        }
-      ],
-      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Doctor of Medicine (MD), Residency in Neurology",
-      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
-    },
-    {
-      "name": "Dr. William Brown",
-      "department": "ENT",
-      "title": "ENT Specialist",
-      "rank": "Senior",
-      "experiences": [
-        {
-          "workplace": "XYZ ENT Hospital",
-          "years": 11
-        },
-        {
-          "workplace": "MNO Ear, Nose, and Throat Clinic",
-          "years": 8
-        }
-      ],
-      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Master of Science in Otorhinolaryngology (MS)",
-      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
-    },
-    {
-      "name": "Dr. Olivia Davis",
-      "department": "Obstetrics and Gynecology",
-      "title": "Obstetrician-Gynecologist",
-      "rank": "Senior",
-      "experiences": [
-        {
-          "workplace": "UVW Women's Hospital",
-          "years": 13
-        },
-        {
-          "workplace": "RST Women's Clinic",
-          "years": 7
-        }
-      ],
-      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Master of Science in Obstetrics and Gynecology (MS)",
-      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
-    },
-    {
-      "name": "Dr. Daniel Wilson",
-      "department": "Dentistry",
-      "title": "Dentist",
-      "rank": "Junior",
-      "experiences": [
-        {
-          "workplace": "ABC Dental Clinic",
-          "years": 3
-        },
-        {
-          "workplace": "DEF Dental Care Center",
-          "years": 2
-        }
-      ],
-      "academic_qualifications": "Bachelor of Dental Surgery (BDS), Doctor of Dental Surgery (DDS)",
-      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
-    },
-    {
-      "name": "Dr. Lily Johnson",
-      "department": "Psychiatry",
-      "title": "Psychiatrist",
-      "rank": "Senior",
-      "experiences": [
-        {
-          "workplace": "GHI Mental Health Hospital",
-          "years": 11
-        },
-        {
-          "workplace": "JKL Psychiatry Center",
-          "years": 6
-        },
-          {
-        "workplace": "MNO Skin Clinic",
-        "years": 6
-      }
-    ],
-    "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Master of Science in Dermatology (MD)",
-    "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
+  {
+    "name": "Dr. John Smith",
+    "department": "Anesthesiology",
+    "degrees": ["MD", "PhD"],
+    "title": "Consultant Anesthesiologist",
+    "rank": "Senior",
+    "image": "https://img.freepik.com/free-photo/portrait-caucasian-mature-male-doctor-with-stethoscope-his-neck_186202-1190.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais",
+    "experiences": ["ABC Hospital", "XYZ Medical Center"],
+    "description": "Dr. John Smith is a highly experienced anesthesiologist with expertise in providing anesthesia care for a wide range of surgical procedures. With his extensive knowledge and skills, he ensures patient safety and comfort throughout the perioperative period. Dr. Smith obtained his medical degree (MD) from a renowned medical school and later pursued a doctorate (PhD) in Anesthesiology, further enhancing his understanding of the field. He has worked at various esteemed institutions, including ABC Hospital and XYZ Medical Center, where he honed his expertise in administering different types of anesthesia and managing pain control. As a consultant anesthesiologist, Dr. Smith is committed to delivering personalized care to each patient, tailoring the anesthesia plan based on their unique needs and medical history. He is known for his compassionate approach and exceptional communication skills, which help him establish a strong rapport with his patients. Dr. John Smith is available for consultations and procedures from Monday to Friday, 9:00 AM to 5:00 PM. His fees for services are $200.",
+    "availableDaysAndTime": "Monday-Friday, 9:00 AM - 5:00 PM",
+    "fees": "$200"
   },
-    {
-      "name": "Dr. John Smith",
-      "department": "Cardiology",
-      "title": "Consultant",
-      "rank": "Senior",
-      "experiences": [
-        {
-          "workplace": "ABC Hospital",
-          "years": 8
-        },
-        {
-          "workplace": "XYZ Medical Center",
-          "years": 5
-        }
-      ],
-      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Doctor of Medicine (MD)",
-      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
-    },
-    {
-      "name": "Dr. Emily Johnson",
-      "department": "Pediatrics",
-      "title": "Pediatrician",
-      "rank": "Junior",
-      "experiences": [
-        {
-          "workplace": "DEF Children's Hospital",
-          "years": 4
-        },
-        {
-          "workplace": "GHI Pediatrics Clinic",
-          "years": 3
-        }
-      ],
-      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Diploma in Child Health (DCH)",
-      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
-    },
-    {
-      "name": "Dr. Sarah Thompson",
-      "department": "Dermatology",
-      "title": "Dermatologist",
-      "rank": "Senior",
-      "experiences": [
-        {
-          "workplace": "JKL Dermatology Center",
-          "years": 10
-        },
-        {
-          "workplace": "MNO Skin Clinic",
-          "years": 6
-        }
-      ],
-      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Master of Science in Dermatology (MD)",
-      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
-    },
-    {
-      "name": "Dr. Robert Davis",
-      "department": "Orthopedics",
-      "title": "Orthopedic Surgeon",
-      "rank": "Senior",
-      "experiences": [
-        {
-          "workplace": "PQR Orthopedic Hospital",
-          "years": 12
-        },
-        {
-          "workplace": "STU Sports Medicine Center",
-          "years": 8
-        }
-      ],
-      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Doctor of Medicine (MD), Fellowship in Orthopedic Surgery",
-      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
-    },
-    {
-      "name": "Dr. Anna Wilson",
-      "department": "Ophthalmology",
-      "title": "Ophthalmologist",
-      "rank": "Senior",
-      "experiences": [
-        {
-          "workplace": "UVW Eye Hospital",
-          "years": 15
-        },
-        {
-          "workplace": "XYZ Vision Clinic",
-          "years": 6
-        }
-      ],
-      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Master of Science in Ophthalmology (MS)",
-      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
-    },
-    {
-      "name": "Dr. Michael Anderson",
-      "department": "Gastroenterology",
-      "title": "Gastroenterologist",
-      "rank": "Senior",
-      "experiences": [
-        {
-          "workplace": "LMN Gastro Hospital",
-          "years": 10
-        },
-        {
-          "workplace": "OPQ Digestive Care Center",
-          "years": 7
-        }
-      ],
-      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Doctor of Medicine (MD), Fellowship in Gastroenterology",
-      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
-    },
-    {
-      "name": "Dr. Sophia Lee",
-      "department": "Neurology",
-      "title": "Neurologist",
-      "rank": "Senior",
-      "experiences": [
-        {
-          "workplace": "RST Neuro Hospital",
-          "years": 14
-        },
-        {
-          "workplace": "UVW Neuro Clinic",
-          "years": 9
-        }
-      ],
-      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Doctor of Medicine (MD), Residency in Neurology",
-      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
-    },
-    {
-      "name": "Dr. William Brown",
-      "department": "ENT",
-      "title": "ENT Specialist",
-      "rank": "Senior",
-      "experiences": [
-        {
-          "workplace": "XYZ ENT Hospital",
-          "years": 11
-        },
-        {
-          "workplace": "MNO Ear, Nose, and Throat Clinic",
-          "years": 8
-        }
-      ],
-      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Master of Science in Otorhinolaryngology (MS)",
-      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
-    },
-    {
-      "name": "Dr. Olivia Davis",
-      "department": "Obstetrics and Gynecology",
-      "title": "Obstetrician-Gynecologist",
-      "rank": "Senior",
-      "experiences": [
-        {
-          "workplace": "UVW Women's Hospital",
-          "years": 13
-        },
-        {
-          "workplace": "RST Women's Clinic",
-          "years": 7
-        }
-      ],
-      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Master of Science in Obstetrics and Gynecology (MS)",
-      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
-    },
-    {
-      "name": "Dr. Daniel Wilson",
-      "department": "Dentistry",
-      "title": "Dentist",
-      "rank": "Junior",
-      "experiences": [
-        {
-          "workplace": "ABC Dental Clinic",
-          "years": 3
-        },
-        {
-          "workplace": "DEF Dental Care Center",
-          "years": 2
-        }
-      ],
-      "academic_qualifications": "Bachelor of Dental Surgery (BDS), Doctor of Dental Surgery (DDS)",
-      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
-    },
-    {
-      "name": "Dr. Lily Johnson",
-      "department": "Psychiatry",
-      "title": "Psychiatrist",
-      "rank": "Senior",
-      "experiences": [
-        {
-          "workplace": "GHI Mental Health Hospital",
-          "years": 11
-        },
-        {
-          "workplace": "JKL Psychiatry Center",
-          "years": 6
-        }
-      ],
-      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Master of Science in Psychiatry (MS)",
-      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
-    },
-    {
-      "name": "Dr. Matthew Wilson",
-      "department": "Internal Medicine",
-      "title": "Internal Medicine Specialist",
-      "rank": "Senior",
-      "experiences": [
-        {
-          "workplace": "ABC Medical Center",
-          "years": 15
-        },
-        {
-          "workplace": "DEF General Hospital",
-          "years": 10
-        }
-      ],
-      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Doctor of Medicine (MD), Board Certified in Internal Medicine",
-      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
-    },
-    {
-      "name": "Dr. Olivia Wilson",
-      "department": "Endocrinology",
-      "title": "Endocrinologist",
-      "rank": "Senior",
-      "experiences": [
-        {
-          "workplace": "GHI Endocrine Clinic",
-          "years": 12
-        },
-        {
-          "workplace": "JKL Hormone Center",
-          "years": 8
-        }
-      ],
-      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Master of Science in Endocrinology (MS)",
-      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
-    },
-    {
-      "name": "Dr. Ethan Brown",
-      "department": "Pulmonology",
-      "title": "Pulmonologist",
-      "rank": "Senior",
-      "experiences": [
-        {
-          "workplace": "MNO Chest Hospital",
-          "years": 9
-        },
-        {
-          "workplace": "PQR Respiratory Clinic",
-          "years": 6
-        }
-      ],
-      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Master of Science in Pulmonology (MS)",
-      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
-    },
-    {
-      "name": "Dr. Grace Anderson",
-      "department": "Rheumatology",
-      "title": "Rheumatologist",
-      "rank": "Junior",
-      "experiences": [
-        {
-          "workplace": "STU Rheumatology Center",
-          "years": 3
-        },
-        {
-          "workplace": "UVW Arthritis Clinic",
-          "years": 2
-        }
-      ],
-      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Diploma in Rheumatology (DRheum)",
-      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
-    },
-    {
-      "name": "Dr. Nathan Taylor",
-      "department": "Hematology",
-      "title": "Hematologist",
-      "rank": "Senior",
-      "experiences": [
-        {
-          "workplace": "XYZ Hematology Clinic",
-          "years": 10
-        },
-        {
-          "workplace": "ABC Blood Center",
-          "years": 7
-        }
-      ],
-      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Master of Science in Hematology (MS)",
-      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
-    },
-    {
-      "name": "Dr. Chloe Martin",
-      "department": "Allergy and Immunology",
-      "title": "Allergist-Immunologist",
-      "rank": "Senior",
-      "experiences": [
-        {
-          "workplace": "DEF Allergy Clinic",
-          "years": 9
-        },
-        {
-          "workplace": "GHI Immunology Center",
-          "years": 6
-        }
-      ],
-      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Master of Science in Allergy and Immunology (MS)",
-      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
-    },
-    {
-      "name": "Dr. Samuel Wilson",
-      "department": "Nephrology",
-      "title": "Nephrologist",
-      "rank": "Senior",
-      "experiences": [
-        {
-          "workplace": "JKL Kidney Hospital",
-          "years": 11
-        },
-        {
-          "workplace": "MNO Nephrology Clinic",
-          "years": 7
-        }
-      ],
-      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Master of Science in Nephrology (MS)",
-      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
-    },
-    {
-      "name": "Dr. Grace Thompson",
-      "department": "Gynecology",
-      "title": "Gynecologist",
-      "rank": "Junior",
-      "experiences": [
-        {
-          "workplace": "PQR Women's Clinic",
-          "years": 4
-        },
-        {
-          "workplace": "STU Obstetrics and Gynecology Hospital",
-          "years": 3
-        }
-      ],
-      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Diploma in Gynecology (DGyn)",
-      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
-    },
-    {
-      "name": "Dr. Ethan Wilson",
-      "department": "Oncology",
-      "title": "Oncologist",
-      "rank": "Senior",
-      "experiences": [
-        {
-          "workplace": "UVW Cancer Center",
-          "years": 12
-        },
-        {
-          "workplace": "XYZ Oncology Hospital",
-          "years": 9
-        }
-      ],
-      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Master of Science in Oncology (MS)",
-      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
-    },
-    {
-      "name": "Dr. Natalie Brown",
-      "department": "Dermatology",
-      "title": "Dermatologist",
-      "rank": "Junior",
-      "experiences": [
-        {
-          "workplace": "ABC Dermatology Clinic",
-          "years": 3
-        },
-        {
-          "workplace": "DEF Skin Care Center",
-          "years": 2
-        }
-      ],
-      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Diploma in Dermatology (DDerm)",
-      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
-    },
-    {
-      "name": "Dr. James Wilson",
-      "department": "Gastroenterology",
-      "title": "Gastroenterologist",
-      "rank": "Junior",
-      "experiences": [
-        {
-          "workplace": "GHI Digestive Clinic",
-          "years": 4
-        },
-        {
-          "workplace": "JKL Gastro Hospital",
-          "years": 3
-        }
-      ],
-      "academic_qualifications": "Bachelor of Medicine, Bachelor of Surgery (MBBS), Diploma in Gastroenterology (DGastro)",
-      "image": "https://img.freepik.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-3094.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais"
-    }
+  {
+    "name": "Dr. Emily Johnson",
+    "department": "Cardiology",
+    "degrees": ["MD"],
+    "title": "Cardiologist",
+    "rank": "Junior",
+    "image": "https://img.freepik.com/free-photo/portrait-happy-successful-young-female-doctor-with-stethoscope_186202-3901.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais",
+    "experiences": ["DEF Hospital", "GHI Medical Group"],
+    "description": "Dr. Emily Johnson is a dedicated cardiologist specializing in the diagnosis, treatment, and prevention of cardiovascular diseases. She completed her medical degree (MD) and gained extensive experience in renowned institutions such as DEF Hospital and GHI Medical Group. Dr. Johnson is passionate about providing exceptional cardiac care to her patients, utilizing her expertise in non-invasive diagnostic techniques, interpretation of imaging studies, and management of various heart conditions. She is known for her patient-centered approach, ensuring that each individual receives personalized treatment plans based on their unique needs and medical history. Dr. Emily Johnson is available for consultations and follow-up appointments on Tuesday, Thursday, and Friday from 10:00 AM to 3:00 PM. Her consultation fee is $150.",
+    "availableDaysAndTime": "Tuesday, Thursday, Friday, 10:00 AM - 3:00 PM",
+    "fees": "$150"
+  },
+  {
+    "name": "Dr. David Williams",
+    "department": "Dentistry",
+    "degrees": ["DDS"],
+    "title": "Dentist",
+    "rank": "Junior",
+    "image": "https://img.freepik.com/free-photo/portrait-smiling-handsome-male-doctor-man_171337-5055.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais",
+    "experiences": ["JKL Dental Clinic", "MNO Dental Hospital"],
+    "description": "Dr. David Williams is a skilled dentist with a passion for providing comprehensive oral care. He obtained his Doctor of Dental Surgery (DDS) degree from a reputable dental school and has gained valuable experience working at JKL Dental Clinic and MNO Dental Hospital. Dr. Williams is dedicated to improving his patients' oral health by offering a range of dental services, including preventive care, restorative procedures, and cosmetic dentistry. With his gentle approach and attention to detail, he strives to create a comfortable and anxiety-free environment for every patient. Dr. David Williams is available for appointments on Monday, Wednesday, and Friday from 8:00 AM to 4:00 PM. His dental fees vary depending on the specific treatment required.",
+    "availableDaysAndTime": "Monday, Wednesday, Friday, 8:00 AM - 4:00 PM",
+    "fees": "$120"
+  },
+  {
+    "name": "Dr. Sarah Davis",
+    "department": "Dermatology",
+    "degrees": ["MD"],
+    "title": "Dermatologist",
+    "rank": "Senior",
+    "image": "https://img.freepik.com/free-photo/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture_409827-254.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais",
+    "experiences": ["PQR Skin Care Clinic", "STU Dermatology Center"],
+    "description": "Dr. Sarah Davis is a highly skilled dermatologist specializing in the diagnosis and treatment of skin conditions. She completed her medical degree (MD) and pursued advanced training in dermatology. Dr. Davis has gained significant experience working at PQR Skin Care Clinic and STU Dermatology Center, where she has provided comprehensive dermatological care to numerous patients. With her expertise in medical, surgical, and cosmetic dermatology, Dr. Davis offers a wide range of services, including skin cancer screenings, acne treatments, and aesthetic procedures. She is committed to delivering personalized care and strives to create a welcoming environment for her patients. Dr. Sarah Davis is available for consultations and treatments on Monday, Tuesday, and Thursday from 9:00 AM to 5:00 PM. The fees for her services may vary depending on the specific procedure or treatment.",
+    "availableDaysAndTime": "Monday, Tuesday, Thursday, 9:00 AM - 5:00 PM",
+    "fees": "$180"
+  },
+  {
+    "name": "Dr. Michael Roberts",
+    "department": "Diabetes and Endocrinology",
+    "degrees": ["MD", "PhD"],
+    "title": "Endocrinologist",
+    "rank": "Senior",
+    "image": "https://img.freepik.com/free-photo/portrait-male-physician-looking-camera-isolated-white-background_1157-52206.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais",
+    "experiences": ["VWX Endocrine Clinic", "YZA Diabetes Hospital"],
+    "description": "Dr. Michael Roberts is a highly respected endocrinologist with expertise in managing complex hormonal disorders, particularly diabetes. He completed his medical degree (MD) and further pursued a doctorate (PhD) in Endocrinology, which has enriched his understanding of the field. With years of experience working at VWX Endocrine Clinic and YZA Diabetes Hospital, Dr. Roberts is well-versed in diagnosing and treating various endocrine conditions, including diabetes mellitus, thyroid disorders, and adrenal diseases. He is dedicated to providing individualized treatment plans, emphasizing patient education and empowerment. Dr. Michael Roberts holds clinic hours on Wednesday, Friday, and Saturday from 10:00 AM to 6:00 PM. His consultation fees are $190 per visit.",
+    "availableDaysAndTime": "Wednesday, Friday, Saturday, 10:00 AM - 6:00 PM",
+    "fees": "$190"
+  },
+  {
+    "name": "Dr. Lisa Anderson",
+    "department": "Internal Medicine",
+    "degrees": ["MD"],
+    "title": "Internal Medicine Specialist",
+    "rank": "Junior",
+    "image": "https://img.freepik.com/free-photo/portrait-young-successful-female-surgeon-with-stethoscope-isolated_186202-1270.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais",
+    "experiences": ["BCD Medical Group", "EFG Healthcare Center"],
+    "description": "Dr. Lisa Anderson is a compassionate and dedicated internal medicine specialist providing comprehensive primary care to adult patients. She earned her medical degree (MD) and has gained valuable experience working at BCD Medical Group and EFG Healthcare Center. Dr. Anderson's expertise encompasses the prevention, diagnosis, and management of a wide range of medical conditions, including hypertension, diabetes, respiratory diseases, and gastrointestinal disorders. With a patient-centered approach, she emphasizes preventive care, health promotion, and effective disease management. Dr. Lisa Anderson is available for consultations and follow-up appointments from Tuesday to Friday, between 8:00 AM and 3:00 PM. Her consultation fee is $160.",
+    "availableDaysAndTime": "Tuesday-Friday, 8:00 AM - 3:00 PM",
+    "fees": "$160"
+  },
+  {
+    "name": "Dr. Mark Thompson",
+    "department": "Respiratory Medicine",
+    "degrees": ["MD"],
+    "title": "Respiratory Medicine Specialist",
+    "rank": "Senior",
+    "image": "https://img.freepik.com/free-photo/doctor-smiling-with-stethoscope_1154-36.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais",
+    "experiences": ["HIJ Respiratory Clinic", "KLM Chest Hospital"],
+    "description": "Dr. Mark Thompson is a highly experienced respiratory medicine specialist dedicated to providing comprehensive care for patients with respiratory conditions. He completed his medical degree (MD) and has gained extensive experience working at HIJ Respiratory Clinic and KLM Chest Hospital. Dr. Thompson specializes in the diagnosis and management of various respiratory disorders, including asthma, chronic obstructive pulmonary disease (COPD), and interstitial lung diseases. With a patient-centric approach, he focuses on improving patients' quality of life by providing personalized treatment plans, including medication management, pulmonary rehabilitation, and patient education. Dr. Mark Thompson holds clinic hours from Monday to Thursday, between 9:00 AM and 6:00 PM. The consultation fee for his services is $170.",
+    "availableDaysAndTime": "Monday-Thursday, 9:00 AM - 6:00 PM",
+    "fees": "$170"
+  },
+  {
+    "name": "Dr. Jessica Lewis",
+    "department": "ENT",
+    "degrees": ["MD"],
+    "title": "Otolaryngologist",
+    "rank": "Junior",
+    "image": "https://img.freepik.com/free-photo/female-doctor-hospital-with-stethoscope_23-2148827774.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais",
+    "experiences": ["NOP Ear, Nose, and Throat Clinic", "QRS ENT Hospital"],
+    "description": "Dr. Jessica Lewis is a skilled otolaryngologist specializing in the diagnosis and treatment of disorders related to the ear, nose, and throat. She obtained her medical degree (MD) and has gained valuable experience working at NOP Ear, Nose, and Throat Clinic and QRS ENT Hospital. Dr. Lewis offers comprehensive care for conditions such as chronic sinusitis, hearing loss, tonsillitis, and voice disorders. She provides both medical and surgical treatment options and is committed to delivering personalized care to each patient. Dr. Jessica Lewis holds clinic hours on Monday, Wednesday, and Friday from 9:00 AM to 4:00 PM. Her consultation fee is $140.",
+    "availableDaysAndTime": "Monday, Wednesday, Friday, 9:00 AM - 4:00 PM",
+    "fees": "$140"
+  },
+  {
+    "name": "Dr. Christopher Baker",
+    "department": "Gastroenterology",
+    "degrees": ["MD", "PhD"],
+    "title": "Gastroenterologist",
+    "rank": "Senior",
+    "image": "https://img.freepik.com/free-photo/medium-shot-doctor-with-crossed-arms_23-2148868176.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais",
+    "experiences": ["TUV Digestive Clinic", "WXY Gastro Hospital"],
+    "description": "Dr. Christopher Baker is a highly skilled gastroenterologist specializing in the diagnosis and treatment of gastrointestinal disorders. He obtained his medical degree (MD) and pursued a doctorate (PhD) in Gastroenterology, further enhancing his expertise in the field. Dr. Baker has extensive experience working at TUV Digestive Clinic and WXY Gastro Hospital, where he has provided comprehensive care for patients with conditions such as gastroesophageal reflux disease (GERD), inflammatory bowel disease (IBD), and liver diseases. With a patient-centered approach, he emphasizes the importance of early detection, accurate diagnosis, and tailored treatment plans. Dr. Christopher Baker holds clinic hours on Tuesday, Thursday, and Saturday from 10:00 AM to 5:00 PM. The consultation fee for his services is $180.",
+    "availableDaysAndTime": "Tuesday, Thursday, Saturday, 10:00 AM - 5:00 PM",
+    "fees": "$180"
+  },
+  {
+    "name": "Dr. Rachel Clark",
+    "department": "General Surgery",
+    "degrees": ["MD"],
+    "title": "General Surgeon",
+    "rank": "Junior",
+    "image": "https://img.freepik.com/free-photo/portrait-experienced-professional-therapist-with-stethoscope-looking-camera_1098-19305.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais",
+    "experiences": ["ZAB Surgical Center", "CDE General Hospital"],
+    "description": "Dr. Rachel Clark is a skilled general surgeon specializing in a broad range of surgical procedures. She completed her medical degree (MD) and has gained valuable experience working at ZAB Surgical Center and CDE General Hospital. Dr. Clark's expertise encompasses both elective and emergency surgeries, including appendectomy, hernia repair, gallbladder removal, and bowel resection. She is dedicated to providing compassionate care to her patients, ensuring their safety and well-being throughout the surgical process. Dr. Rachel Clark is available for consultations and surgical procedures from Monday to Friday, between 8:00 AM and 5:00 PM. Her fees vary depending on the specific surgical procedure.",
+    "availableDaysAndTime": "Monday-Friday, 8:00 AM - 5:00 PM",
+    "fees": "$190"
+  },
+  {
+    "name": "Dr. Benjamin Walker",
+    "department": "Nephrology",
+    "degrees": ["MD"],
+    "title": "Nephrologist",
+    "rank": "Junior",
+    "image": "https://img.freepik.com/free-photo/doctor-smiling-with-stethoscope_1154-36.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais",
+    "experiences": ["FGH Nephro Clinic", "IJK Kidney Center"],
+    "description": "Dr. Benjamin Walker is a compassionate nephrologist specializing in the diagnosis and management of kidney-related conditions. He completed his medical degree (MD) and has gained significant experience working at FGH Nephro Clinic and IJK Kidney Center. Dr. Walker provides comprehensive care for patients with kidney diseases, including chronic kidney disease (CKD), glomerulonephritis, and kidney stone disease. He focuses on preventive strategies, medical treatments, and dialysis management to optimize his patients' kidney health. Dr. Benjamin Walker holds clinic hours on Tuesday, Thursday, and Saturday from 9:00 AM to 4:00 PM. The consultation fee for his services is $170.",
+    "availableDaysAndTime": "Tuesday, Thursday, Saturday, 9:00 AM - 4:00 PM",
+    "fees": "$170"
+  },
+  {
+    "name": "Dr. Laura Turner",
+    "department": "Oncology",
+    "degrees": ["MD"],
+    "title": "Oncologist",
+    "rank": "Senior",
+    "image": "https://img.freepik.com/free-photo/woman-doctor-wearing-lab-coat-with-stethoscope-isolated_1303-29791.jpg?size=626&ext=jpg&ga=GA1.2.663062170.1681230249&semt=ais",
+    "experiences": ["MNO Cancer Center", "PQR Oncology Clinic"],
+    "description": "Dr. Laura Turner is a dedicated oncologist specializing in the diagnosis, treatment, and management of various types of cancers. She earned her medical degree (MD) and has extensive experience working at MNO Cancer Center and PQR Oncology Clinic. Dr. Turner provides comprehensive care for cancer patients, including chemotherapy, targeted therapies, immunotherapy, and palliative care. She emphasizes a multidisciplinary approach, collaborating with other specialists to ensure the best possible outcomes for her patients. Dr. Laura Turner is available for consultations and treatment sessions on Monday, Wednesday, and Friday from 9:00 AM to 5:00 PM. Her consultation fee is $200.",
+    "availableDaysAndTime": "Monday, Wednesday, Friday, 9:00 AM - 5:00 PM",
+    "fees": "$200"
+  },
+  {
+    "name": "Dr. Robert Evans",
+    "department": "Gynecology",
+    "degrees": ["MD"],
+    "title": "Gynecologist",
+    "rank": "Senior",
+    "image": "https://img.freepik.com/free-photo/brunette-doctor-with-glasses-stethoscope_1098-2520.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais",
+    "experiences": ["ABC Women's Health Clinic", "XYZ Gynecology Center"],
+    "description": "Dr. Robert Evans is a highly skilled gynecologist providing comprehensive care for women's health issues. He completed his medical degree (MD) and has gained extensive experience working at ABC Women's Health Clinic and XYZ Gynecology Center. Dr. Evans offers a wide range of services, including routine gynecological examinations, contraceptive counseling, prenatal care, and the management of menstrual disorders. He is committed to providing personalized care, taking into consideration each patient's unique needs and concerns. Dr. Robert Evans holds clinic hours from Monday to Friday, between 9:00 AM and 6:00 PM. The consultation fee for his services is $180.",
+    "availableDaysAndTime": "Monday-Friday, 9:00 AM - 6:00 PM",
+    "fees": "$180"
+  },
+  {
+    "name": "Dr. Jennifer Adams",
+    "department": "Ophthalmology",
+    "degrees": ["MD"],
+    "title": "Ophthalmologist",
+    "rank": "Junior",
+    "image": "https://img.freepik.com/free-photo/world-doctors-day-cute-doctor-holding-with-crossed-hands-with-stethoscope-lab-coat_140725-162341.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais",
+    "experiences": ["EFG Eye Clinic", "HIJ Ophthalmic Hospital"],
+    "description": "Dr. Jennifer Adams is a skilled ophthalmologist specializing in the diagnosis and treatment of eye diseases and disorders. She obtained her medical degree (MD) and has gained valuable experience working at EFG Eye Clinic and HIJ Ophthalmic Hospital. Dr. Adams provides comprehensive eye care services, including routine eye examinations, cataract surgery, glaucoma management, and treatment of retinal conditions. She is dedicated to preserving her patients' vision and improving their quality of life. Dr. Jennifer Adams is available for consultations and eye examinations on Tuesday, Thursday, and Saturday from 9:00 AM to 4:00 PM. Her consultation fee is $150.",
+    "availableDaysAndTime": "Tuesday, Thursday, Saturday, 9:00 AM - 4:00 PM",
+    "fees": "$150"
+  },
+  {
+    "name": "Dr. Daniel Cooper",
+    "department": "Neurology",
+    "degrees": ["MD"],
+    "title": "Neurologist",
+    "rank": "Senior",
+    "image": "https://img.freepik.com/free-photo/portrait-friendly-male-doctor-dressed-uniform_171337-105.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais",
+    "experiences": ["FGH Neuro Clinic", "IJK Neurology Center"],
+    "description": "Dr. Daniel Cooper is a highly skilled neurologist specializing in the diagnosis and treatment of disorders affecting the nervous system. He completed his medical degree (MD) and has gained extensive experience working at FGH Neuro Clinic and IJK Neurology Center. Dr. Cooper provides comprehensive care for conditions such as epilepsy, stroke, multiple sclerosis (MS), and Parkinson's disease. He employs advanced diagnostic techniques and evidence-based treatments to optimize patient outcomes. Dr. Daniel Cooper holds clinic hours on Monday, Wednesday, and Friday from 8:00 AM to 5:00 PM. The consultation fee for his services is $190.",
+    "availableDaysAndTime": "Monday, Wednesday, Friday, 8:00 AM - 5:00 PM",
+    "fees": "$190"
+  },
+  {
+    "name": "Dr. Amanda Wilson",
+    "department": "Psychiatry",
+    "degrees": ["MD"],
+    "title": "Psychiatrist",
+    "rank": "Junior",
+    "image": "https://img.freepik.com/free-photo/attractive-young-male-nutriologist-lab-coat-smiling-against-white-background_662251-2960.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais",
+    "experiences": ["MNO Mental Health Clinic", "PQR Psychiatric Hospital"],
+    "description": "Dr. Amanda Wilson is a compassionate psychiatrist specializing in the diagnosis and treatment of mental health disorders. She completed her medical degree (MD) and has gained significant experience working at MNO Mental Health Clinic and PQR Psychiatric Hospital. Dr. Wilson provides comprehensive psychiatric evaluations, medication management, and psychotherapy for a wide range of conditions, including anxiety disorders, mood disorders, and psychotic disorders. She is committed to promoting mental well-being and providing personalized care to her patients. Dr. Amanda Wilson holds clinic hours from Monday to Friday, between 9:00 AM and 6:00 PM. The consultation fee for her services is $160.",
+    "availableDaysAndTime": "Monday-Friday, 9:00 AM - 6:00 PM",
+    "fees": "$160"
+  },
+  {
+    "name": "Dr. Rebecca Turner",
+    "department": "Pediatrics",
+    "degrees": ["MD"],
+    "title": "Pediatrician",
+    "rank": "Senior",
+    "image": "https://img.freepik.com/free-photo/friendly-doctor-working-office_23-2147796601.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais",
+    "experiences": ["ABC Children's Clinic", "XYZ Pediatric Hospital"],
+    "description": "Dr. Rebecca Turner is a highly skilled pediatrician specializing in providing comprehensive healthcare services to infants, children, and adolescents. She earned her medical degree (MD) and has gained extensive experience working at ABC Children's Clinic and XYZ Pediatric Hospital. Dr. Turner is passionate about promoting children's health and well-being, offering a range of services including well-child visits, immunizations, acute care, and management of chronic conditions. She believes in building strong relationships with her young patients and their families to provide the best possible care. Dr. Rebecca Turner is available for appointments from Monday to Friday, between 8:00 AM and 5:00 PM. The consultation fee for her services is $180.",
+    "availableDaysAndTime": "Monday-Friday, 8:00 AM - 5:00 PM",
+    "fees": "$180"
+  },
+  {
+    "name": "Dr. Andrew Harris",
+    "department": "Urology",
+    "degrees": ["MD"],
+    "title": "Urologist",
+    "rank": "Junior",
+    "image": "https://img.freepik.com/free-photo/medium-shot-doctor-writing_23-2148868181.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais",
+    "experiences": ["DEF Uro Clinic", "GHI Urology Center"],
+    "description": "Dr. Andrew Harris is a skilled urologist specializing in the diagnosis and treatment of disorders affecting the urinary tract and male reproductive system. He obtained his medical degree (MD) and has gained valuable experience working at DEF Uro Clinic and GHI Urology Center. Dr. Harris provides comprehensive urological care, including the management of kidney stones, urinary tract infections, prostate conditions, and urological cancers. He is committed to delivering personalized treatment plans, utilizing both surgical and non-surgical interventions to optimize patient outcomes. Dr. Andrew Harris holds clinic hours on Tuesday, Thursday, and Saturday from 10:00 AM to 4:00 PM. The consultation fee for his services is $170.",
+    "availableDaysAndTime": "Tuesday, Thursday, Saturday, 10:00 AM - 4:00 PM",
+    "fees": "$170"
+  },
+  {
+    "name": "Dr. Olivia Thompson",
+    "department": "Orthopedics",
+    "degrees": ["MD"],
+    "title": "Orthopedic Surgeon",
+    "rank": "Senior",
+    "image": "https://img.freepik.com/free-photo/young-lady-looking-pointing-copy-space_171337-5771.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais",
+    "experiences": ["ABC Orthopedic Clinic", "XYZ Orthopedic Hospital"],
+    "description": "Dr. Olivia Thompson is a highly skilled orthopedic surgeon specializing in the diagnosis and treatment of musculoskeletal disorders. She completed her medical degree (MD) and has gained extensive experience working at ABC Orthopedic Clinic and XYZ Orthopedic Hospital. Dr. Thompson provides comprehensive care for conditions such as fractures, joint replacements, sports injuries, and spine disorders. She is dedicated to improving her patients' quality of life by restoring function and alleviating pain through surgical and non-surgical interventions. Dr. Olivia Thompson holds clinic hours from Monday to Friday, between 8:00 AM and 5:00 PM. The consultation fee for her services is $200.",
+    "availableDaysAndTime": "Monday-Friday, 8:00 AM - 5:00 PM",
+    "fees": "$200"
+  },
+  {
+    "name": "Dr. Ethan Turner",
+    "department": "Rheumatology",
+    "degrees": ["MD"],
+    "title": "Rheumatologist",
+    "rank": "Junior",
+    "image": "https://img.freepik.com/free-photo/healthcare-workers-medicine-covid-19-pandemic-self-quarantine-concept-smiling-attractive-doctor-scrubs-glasses-stethoscope-neck-cross-arms-chest-ready-help-patients_1258-58772.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais",
+    "experiences": ["PQR Rheumatology Clinic", "STU Arthritis Center"],
+    "description": "Dr. Ethan Turner is a compassionate rheumatologist specializing in the diagnosis and treatment of rheumatic diseases. He obtained his medical degree (MD) and has gained valuable experience working at PQR Rheumatology Clinic and STU Arthritis Center. Dr. Turner provides comprehensive care for conditions such as rheumatoid arthritis, lupus, osteoarthritis, and gout. He is dedicated to improving his patients' quality of life by offering personalized treatment plans, which may include medication management, physical therapy, and lifestyle modifications. Dr. Ethan Turner holds clinic hours on Monday, Wednesday, and Friday from 9:00 AM to 4:00 PM. The consultation fee for his services is $180.",
+    "availableDaysAndTime": "Monday, Wednesday, Friday, 9:00 AM - 4:00 PM",
+    "fees": "$180"
+  },
+  {
+    "name": "Dr. Ava Mitchell",
+    "department": "Allergy and Immunology",
+    "degrees": ["MD"],
+    "title": "Allergist/Immunologist",
+    "rank": "Senior",
+    "image": "https://img.freepik.com/free-photo/young-handsome-physician-medical-robe-with-stethoscope_1303-17814.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais",
+    "experiences": ["VWX Allergy Clinic", "YZA Immunology Center"],
+    "description": "Dr. Ava Mitchell is a highly skilled allergist and immunologist specializing in the diagnosis and management of allergic and immunologic disorders. She completed her medical degree (MD) and has gained extensive experience working at VWX Allergy Clinic and YZA Immunology Center. Dr. Mitchell provides comprehensive care for conditions such as asthma, allergic rhinitis, food allergies, and immune deficiencies. She employs advanced diagnostic techniques and offers personalized treatment plans, including allergy testing, immunotherapy, and medication management. Dr. Ava Mitchell holds clinic hours from Tuesday to Friday, between 9:00 AM and 5:00 PM. The consultation fee for her services is $190.",
+    "availableDaysAndTime": "Tuesday-Friday, 9:00 AM - 5:00 PM",
+    "fees": "$190"
+  },
+  {
+    "name": "Dr. Sophia King",
+    "department": "Hematology",
+    "degrees": ["MD"],
+    "title": "Hematologist",
+    "rank": "Senior",
+    "image": "https://img.freepik.com/free-photo/young-beautiful-doctor-wearing-stethoscope-her-neck_329181-15415.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais",
+    "experiences": ["BCD Hematology Clinic", "EFG Blood Disorders Center"],
+    "description": "Dr. Sophia King is a highly skilled hematologist specializing in the diagnosis and treatment of blood disorders. She earned her medical degree (MD) and has gained extensive experience working at BCD Hematology Clinic and EFG Blood Disorders Center. Dr. King provides comprehensive care for conditions such as anemia, bleeding disorders, thrombosis, and hematological malignancies. She is dedicated to delivering personalized treatment plans, which may include medication management, blood transfusions, and stem cell transplantation. Dr. Sophia King holds clinic hours from Monday to Thursday, between 9:00 AM and 6:00 PM. The consultation fee for her services is $170.",
+    "availableDaysAndTime": "Monday-Thursday, 9:00 AM - 6:00 PM",
+    "fees": "$170"
+  },
+  {
+    "name": "Dr. Lucas Cooper",
+    "department": "Gastrointestinal Surgery",
+    "degrees": ["MD"],
+    "title": "Gastrointestinal Surgeon",
+    "rank": "Junior",
+    "image": "https://img.freepik.com/free-photo/cheerful-male-doctor-white-gown-portrait_53876-108640.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais",
+    "experiences": ["FGH Surgical Clinic", "IJK Gastrointestinal Hospital"],
+    "description": "Dr. Lucas Cooper is a skilled gastrointestinal surgeon specializing in surgical interventions for disorders of the gastrointestinal tract. He obtained his medical degree (MD) and has gained valuable experience working at FGH Surgical Clinic and IJK Gastrointestinal Hospital. Dr. Cooper provides comprehensive surgical care for conditions such as gastrointestinal cancers, inflammatory bowel disease, and gallbladder disorders. He is committed to delivering safe and effective surgical procedures, employing minimally invasive techniques whenever possible. Dr. Lucas Cooper holds clinic hours on Tuesday, Thursday, and Saturday from 10:00 AM to 5:00 PM. The consultation fee for his services is $180.",
+    "availableDaysAndTime": "Tuesday, Thursday, Saturday, 10:00 AM - 5:00 PM",
+    "fees": "$180"
+  },
+  {
+    "name": "Dr. Lily Peterson",
+    "department": "Geriatrics",
+    "degrees": ["MD"],
+    "title": "Geriatrician",
+    "rank": "Junior",
+    "image": "https://img.freepik.com/free-photo/female-doctor-hospital_23-2148827760.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais",
+    "experiences": ["NOP Senior Care Clinic", "QRS Geriatric Center"],
+    "description": "Dr. Lily Peterson is a compassionate geriatrician specializing in the healthcare needs of older adults. She completed her medical degree (MD) and has gained significant experience working at NOP Senior Care Clinic and QRS Geriatric Center. Dr. Peterson provides comprehensive care for geriatric patients, focusing on age-related conditions, chronic diseases, and the management of multiple medications. She emphasizes a holistic approach, considering both physical and emotional well-being in her treatment plans. Dr. Lily Peterson holds clinic hours from Monday to Friday, between 9:00 AM and 6:00 PM. The consultation fee for her services is $160.",
+    "availableDaysAndTime": "Monday-Friday, 9:00 AM - 6:00 PM",
+    "fees": "$160"
+  },
+  {
+    "name": "Dr. Henry Foster",
+    "department": "Pulmonology",
+    "degrees": ["MD"],
+    "title": "Pulmonologist",
+    "rank": "Senior",
+    "image": "https://img.freepik.com/free-photo/medium-shot-doctor-wearing-coat_23-2148816198.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais",
+    "experiences": ["TUV Pulmonary Clinic", "WXY Lung Center"],
+    "description": "Dr. Henry Foster is a highly skilled pulmonologist specializing in the diagnosis and treatment of respiratory diseases. He earned his medical degree (MD) and has gained extensive experience working at TUV Pulmonary Clinic and WXY Lung Center. Dr. Foster provides comprehensive care for conditions such as asthma, chronic obstructive pulmonary disease (COPD), interstitial lung diseases, and lung cancer. He utilizes advanced diagnostic techniques and offers personalized treatment plans, including medication management, pulmonary rehabilitation, and interventional procedures. Dr. Henry Foster holds clinic hours from Monday to Thursday, between 8:00 AM and 5:00 PM. The consultation fee for his services is $190.",
+    "availableDaysAndTime": "Monday-Thursday, 8:00 AM - 5:00 PM",
+    "fees": "$190"
+  },
+  {
+    "name": "Dr. Natalie Hughes",
+    "department": "Endocrine Surgery",
+    "degrees": ["MD"],
+    "title": "Endocrine Surgeon",
+    "rank": "Junior",
+    "image": "https://img.freepik.com/free-photo/smiley-female-doctor-posing-suit-stethoscope_23-2149014355.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais",
+    "experiences": ["JKL Surgical Clinic", "MNO Endocrine Hospital"],
+    "description": "Dr. Natalie Hughes is a skilled endocrine surgeon specializing in surgical interventions for endocrine disorders. She obtained her medical degree (MD) and has gained valuable experience working at JKL Surgical Clinic and MNO Endocrine Hospital. Dr. Hughes provides comprehensive surgical care for conditions such as thyroid disorders, adrenal tumors, and parathyroid diseases. She is committed to delivering safe and effective surgical procedures, utilizing minimally invasive techniques whenever appropriate. Dr. Natalie Hughes holds clinic hours on Monday, Wednesday, and Friday from 9:00 AM to 4:00 PM. The consultation fee for her services is $180.",
+    "availableDaysAndTime": "Monday, Wednesday, Friday, 9:00 AM - 4:00 PM",
+    "fees": "$180"
+  },
+  {
+    "name": "Dr. Victoria Richardson",
+    "department": "Podiatry",
+    "degrees": ["DPM"],
+    "title": "Podiatrist",
+    "rank": "Junior",
+    "image": "https://img.freepik.com/free-photo/smiling-young-female-doctor-wearing-medical-robe-with-stethoscope-isolated-orange-background_141793-118924.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais",
+    "experiences": ["PQR Podiatry Clinic", "STU Foot and Ankle Center"],
+    "description": "Dr. Victoria Richardson is a skilled podiatrist specializing in the diagnosis and treatment of foot and ankle disorders. She obtained her Doctor of Podiatric Medicine (DPM) degree and has gained valuable experience working at PQR Podiatry Clinic and STU Foot and Ankle Center. Dr. Richardson provides comprehensive care for conditions such as foot and ankle injuries, plantar fasciitis, bunions, and diabetic foot complications. She employs both conservative and surgical treatment options to improve her patients' mobility and alleviate pain. Dr. Victoria Richardson holds clinic hours on Tuesday, Thursday, and Saturday from 9:00 AM to 4:00 PM. The consultation fee for her services is $150.",
+    "availableDaysAndTime": "Tuesday, Thursday, Saturday, 9:00 AM - 4:00 PM",
+    "fees": "$150"
+  },
+  {
+    "name": "Dr. Samuel Wright",
+    "department": "Plastic Surgery",
+    "degrees": ["MD"],
+    "title": "Plastic Surgeon",
+    "rank": "Senior",
+    "image": "https://img.freepik.com/free-photo/bearded-doctor-glasses_23-2147896187.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais",
+    "experiences": ["ABC Plastic Surgery Clinic", "XYZ Aesthetic Center"],
+    "description": "Dr. Samuel Wright is a highly skilled plastic surgeon specializing in both reconstructive and cosmetic procedures. He completed his medical degree (MD) and has gained extensive experience working at ABC Plastic Surgery Clinic and XYZ Aesthetic Center. Dr. Wright offers a wide range of surgical and non-surgical options, including breast reconstruction, facial rejuvenation, body contouring, and aesthetic breast surgeries. He is dedicated to achieving natural-looking results while prioritizing patient safety and satisfaction. Dr. Samuel Wright holds clinic hours from Monday to Friday, between 9:00 AM and 5:00 PM. The consultation fee for his services is $200.",
+    "availableDaysAndTime": "Monday-Friday, 9:00 AM - 5:00 PM",
+    "fees": "$200"
+  }
 ]

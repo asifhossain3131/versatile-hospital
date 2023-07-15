@@ -41,7 +41,8 @@ const Header = () => {
       >
         Find a doctor
       </Typography></Link>
-      <Typography
+    <Link href='/services'>
+    <Typography
         as="li"
         variant="small"
         color="blue-gray"
@@ -49,6 +50,7 @@ const Header = () => {
       >
         Services
       </Typography>
+    </Link>
       <Typography
         as="li"
         variant="small"

@@ -15,12 +15,14 @@ import {
   PowerIcon,
 } from "@heroicons/react/24/outline";
 import useAuth from "@/hooks/useAuth";
+import { useRouter } from 'next/navigation';
 
 
 const SubHeader = () => {
   const{user,logOut}=useAuth()
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen((cur) => !cur);
+    const {refresh}=useRouter()
 
     // profile menu component
 const profileMenuItems = [
@@ -61,6 +63,7 @@ function ProfileMenu() {
       method:'POST'
     })
     const data=await  res.json()
+    refresh()
     }
  closeMenu()
   }
