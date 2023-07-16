@@ -14,7 +14,7 @@ const specialDoctors=allDoctors.filter((specialDoctor:any)=>specialDoctor.rank==
             <div className='grid grid-cols-2 lg:grid-cols-4 mx-12 gap-4'>
 {
     specialDoctors.splice(0,8).map((doctor:any)=>
-    <SpecialDoctorsCard key={doctor.id} doctor={doctor}></SpecialDoctorsCard>
+    <SpecialDoctorsCard key={doctor.id} doctor={JSON.parse(JSON.stringify(doctor))}></SpecialDoctorsCard>
     )
 }
             </div>

@@ -6,12 +6,13 @@ import {
     Typography,
     Button,
   } from "@material-tailwind/react";
-  import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
 
 const DoctorCard = ({doctor}:any) => {
-    const{name,_id,rank,degrees,title,image,institution}=doctor
+    const{name,_id,rank,degrees,title,image,institution,department}=doctor
     return (
-        <Card className="flex-row w-96 h-[230px] rounded-none border">
+      <Link href={`/findDoctors/${department}/${_id}`}>
+        <Card className="flex-row w-96 h-[230px] rounded-none border hover:bg-gray-200">
         <CardHeader shadow={false} floated={false} className="w-2/5 shrink-0 m-0 rounded-none border">
           <img 
             src={image}
@@ -35,6 +36,7 @@ const DoctorCard = ({doctor}:any) => {
           </Typography>
         </CardBody>
       </Card>
+      </Link>
     );
 };
 
