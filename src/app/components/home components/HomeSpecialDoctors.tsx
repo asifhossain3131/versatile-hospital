@@ -13,8 +13,8 @@ const specialDoctors=allDoctors.filter((specialDoctor:any)=>specialDoctor.rank==
             <SectionTitle title='special consultants' subtitle='Over 50 multi-disciplinary specialists having higher degree and experience'></SectionTitle>
             <div className='grid grid-cols-2 lg:grid-cols-4 mx-12 gap-4'>
 {
-    specialDoctors.splice(0,8).map((doctor:any)=>
-    <SpecialDoctorsCard key={doctor.id} doctor={JSON.parse(JSON.stringify(doctor))}></SpecialDoctorsCard>
+    specialDoctors.splice(0,8).map((doctor:any)=> 
+  <Link  key={doctor._id} href={`/findDoctors/${doctor?.department}/${doctor?._id}`}><SpecialDoctorsCard doctor={JSON.parse(JSON.stringify(doctor))}></SpecialDoctorsCard></Link>
     )
 }
             </div>
