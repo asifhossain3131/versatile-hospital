@@ -1,0 +1,171 @@
+[
+    {
+      "serviceName": "Ward/Cabin",
+      "description": "Our ward/cabin service provides patients with comfortable single or shared rooms, equipped with essential amenities. Our priority is to ensure a restful and healing environment for all patients. Our dedicated nursing staff is available 24/7 to provide attentive care and monitor patient health. Patients can enjoy various facilities during their stay, including cable TV and WiFi to stay connected with loved ones and the world. We maintain specific visiting hours to ensure patients' privacy and well-being. In-room dining options are available, offering a diverse and nutritious menu tailored to individual dietary requirements. Our housekeeping services maintain a clean and hygienic environment for a comfortable recovery.",
+      "img": "https://img.freepik.com/free-photo/empty-sad-hospital-bed_23-2149017251.jpg?size=626&ext=jpg&ga=GA1.2.663062170.1681230249&semt=ais",
+      "servicesAndFacilities": [
+        "Our nursing staff is available round-the-clock to provide attentive care and support to patients.",
+        "Each room is equipped with cable TV to help patients relax and stay entertained during their stay.",
+        "We offer WiFi connectivity, enabling patients to stay connected with loved ones and the outside world.",
+        "Visiting hours are strictly maintained to ensure patients' privacy and rest.",
+        "In-room dining options are available, offering a diverse and nutritious menu tailored to individual dietary requirements.",
+        "Our housekeeping services ensure that patient rooms and common areas are clean and hygienic.",
+        "For shared rooms, we carefully match patients based on their medical needs and compatibility."
+      ]
+    },
+    {
+      "serviceName": "Emergency",
+      "description": "Our Emergency department operates round-the-clock, providing immediate medical attention and critical care to patients in urgent need. Our team of highly skilled medical professionals is trained to handle all types of medical emergencies, from minor injuries to life-threatening conditions. We have a dedicated trauma care unit equipped with advanced medical technologies and imaging facilities for quick and accurate diagnosis. Our ambulance services are swift and efficient, ensuring patients receive prompt medical attention during transportation. Our emergency surgery team is ready to perform life-saving procedures when required. Our pharmacy is well-stocked with essential medications, and our laboratory services facilitate rapid test results for timely intervention.",
+      "img": "https://img.freepik.com/free-photo/doctors-pushing-emergency-stretcher-bed-corridor_107420-63715.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=sph",
+      "servicesAndFacilities": [
+        "Our team of highly skilled medical professionals is available 24/7 to provide immediate medical attention and critical care to patients in urgent need.",
+        "Our dedicated trauma care unit is equipped with advanced medical technologies and imaging facilities to quickly and accurately diagnose and treat injuries.",
+        "Our ambulance services are swift and efficient, ensuring patients receive prompt medical attention during transportation to the hospital.",
+        "In critical situations, our emergency surgery team is ready to perform life-saving procedures to stabilize patients.",
+        "Our pharmacy is well-stocked with essential medications, ensuring patients receive the required treatment without delay.",
+        "Our laboratory services facilitate rapid test results, enabling quick diagnosis and timely medical intervention.",
+        "We have an effective triage system in place to prioritize patients based on the severity of their condition, ensuring those in critical need receive immediate attention."
+      ]
+    },
+    {
+      "serviceName": "Obstetrics and Gynaecology",
+      "description": "Our Obstetrics and Gynaecology department offers specialized care for women's health, pregnancy, and childbirth. We provide comprehensive prenatal care to ensure the well-being of expectant mothers and their babies. Our labour and delivery suites are designed to provide a comfortable and safe environment for childbirth. We are equipped to perform cesarean sections when necessary, with skilled surgical teams. Our postpartum care focuses on the health and recovery of both the mother and baby. We offer a range of gynaecological surgeries and procedures to address various health concerns. Our high-risk pregnancy care is tailored to provide extra support and monitoring for expectant mothers with complex medical conditions. Family planning services are available to help women make informed decisions about their reproductive health.",
+      "img": "https://img.freepik.com/free-photo/female-student-practicing-medicine_23-2149040262.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais",
+      "servicesAndFacilities": [
+        "We provide comprehensive prenatal care, including regular check-ups, ultrasounds, and nutritional counseling, to ensure the well-being of expectant mothers and their babies.",
+        "Our labour and delivery suites are designed to provide a comfortable and safe environment for childbirth, with state-of-the-art medical equipment and facilities.",
+        "We have skilled surgical teams ready to perform cesarean sections when necessary to ensure the safety of both the mother and baby.",
+        "Our postpartum care focuses on the health and recovery of both the mother and baby, with breastfeeding support and emotional guidance.",
+        "We offer a range of gynaecological surgeries and procedures, such as hysterectomy, fibroid removal, and laparoscopy, to address various health concerns.",
+        "For expectant mothers with complex medical conditions, we offer high-risk pregnancy care, providing extra support and monitoring throughout the pregnancy.",
+        "Our family planning services include contraceptive counseling and education to help women make informed decisions about their reproductive health."
+      ]
+    },
+    {
+      "serviceName": "Stroke ICU with Full Support",
+      "description": "Our Stroke ICU offers comprehensive care for patients who have experienced a stroke, with a focus on ensuring their well-being and recovery. Our state-of-the-art facilities and advanced medical technologies enable accurate diagnosis and timely treatment. Our dedicated team of medical professionals, including neurologists and critical care specialists, provide round-the-clock support and monitoring. We have specialized stroke care units equipped with advanced life-support systems to stabilize patients in critical condition. Our rehabilitation services aid in the recovery process and help patients regain their functional abilities. We provide psychological support and counseling for patients and their families during the challenging recovery phase. Our stroke education programs aim to raise awareness about stroke prevention and management within the community.",
+      "img": "https://img.freepik.com/free-photo/woman-doctor-service-help-support-discussing-consulting-talk-senior-patient-holding-hands-meeting-health-medical-care-express-trust-concept-hospital-healthcare-medicine_657921-53.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais",
+      "servicesAndFacilities": [
+        "Our specialized Stroke ICU is equipped with advanced medical technologies to enable accurate diagnosis and timely treatment.",
+        "Our dedicated team of medical professionals, including neurologists and critical care specialists, provide round-the-clock support and monitoring to ensure patients' well-being.",
+        "We have specialized stroke care units equipped with advanced life-support systems to stabilize patients in critical condition.",
+        "Our rehabilitation services, including physical and occupational therapy, aid in the recovery process and help patients regain their functional abilities.",
+        "We provide psychological support and counseling for patients and their families during the challenging recovery phase.",
+        "Our stroke education programs aim to raise awareness about stroke prevention and management within the community, empowering individuals to make informed lifestyle choices.",
+        "We offer outpatient follow-up care and support for stroke survivors to promote long-term recovery and improve their quality of life."
+      ]
+    },
+    {
+      "serviceName": "ICU (Intensive Care Unit)",
+      "description": "Our Intensive Care Unit (ICU) provides advanced medical care for critically ill patients who require continuous monitoring and support. We have specialized ICU teams consisting of intensivists, critical care nurses, and other medical specialists. Our state-of-the-art medical equipment and advanced life-support systems ensure precise monitoring and immediate intervention. Patients in the ICU receive personalized care plans tailored to their specific medical needs. Our ICU is a sterile and controlled environment to prevent infections and ensure patient safety. Family members are provided with regular updates on the patient's condition, and we facilitate communication to support emotional well-being. Our ICU also offers palliative care for patients with advanced or terminal illnesses, focusing on pain relief and comfort.",
+      "img": "https://img.freepik.com/free-photo/interior-view-operating-room_1170-2254.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=sph",
+      "servicesAndFacilities": [
+        "Our ICU teams consist of experienced intensivists, critical care nurses, and other medical specialists who provide advanced medical care to critically ill patients.",
+        "Our state-of-the-art medical equipment and advanced life-support systems enable precise monitoring and immediate intervention.",
+        "Patients in the ICU receive personalized care plans tailored to their specific medical needs.",
+        "Our ICU is a sterile and controlled environment, implementing strict infection control measures to prevent infections and ensure patient safety.",
+        "Family members are provided with regular updates on the patient's condition, and we facilitate communication to support emotional well-being.",
+        "We offer palliative care services for patients with advanced or terminal illnesses, focusing on pain relief and providing comfort to patients and their families.",
+        "Our multidisciplinary ICU team conducts regular case conferences to discuss treatment plans and ensure comprehensive care for each patient."
+      ]
+    },
+    {
+      "serviceName": "PICU (Pediatric Intensive Care Unit)",
+      "description": "Our Pediatric Intensive Care Unit (PICU) is dedicated to providing specialized medical care to critically ill infants, children, and adolescents. We have a team of pediatric intensivists, critical care nurses, and pediatric specialists who are experts in treating pediatric patients. Our PICU is equipped with state-of-the-art medical equipment designed for young patients' specific needs. We offer advanced life-support systems and continuous monitoring to ensure immediate intervention when required. Our pediatric care teams work closely with families to provide emotional support and involve them in the decision-making process. We have play areas and activities to create a child-friendly environment that promotes healing and recovery. Our PICU also provides educational support for families to ensure they understand their child's condition and treatment.",
+      "img": "https://img.freepik.com/free-photo/practitioner-woman-doctor-putting-medical-oximeter-little-child-patient-finger-monitoring-heartbeat-pulse-during-recovery-consultation-black-nurse-checking-iv-drip-bag-working-hospital-ward_482257-28330.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais",
+      "servicesAndFacilities": [
+        "Our team of pediatric intensivists, critical care nurses, and pediatric specialists provide specialized medical care to critically ill infants, children, and adolescents.",
+        "Our PICU is equipped with state-of-the-art medical equipment designed for young patients' specific needs.",
+        "We offer advanced life-support systems and continuous monitoring to ensure immediate intervention when required.",
+        "Our pediatric care teams work closely with families to provide emotional support and involve them in the decision-making process.",
+        "We have play areas and activities in the PICU to create a child-friendly environment that promotes healing and recovery.",
+        "Our PICU also provides educational support for families to ensure they understand their child's condition and treatment.",
+        "We offer dedicated child life specialists who engage with pediatric patients through creative and therapeutic activities, reducing stress and anxiety."
+      ]
+    },
+    {
+      "serviceName": "NICU (Neonatal Intensive Care Unit)",
+      "description": "Our Neonatal Intensive Care Unit (NICU) provides specialized care for premature newborns and critically ill infants. We have a team of neonatologists, neonatal nurses, and neonatal specialists who are experts in caring for newborns. Our NICU is equipped with advanced medical technologies, including incubators and ventilators, to provide the necessary support for newborns' delicate health. We offer a sterile and controlled environment to prevent infections and ensure newborns' safety. Our NICU team collaborates with families to provide emotional support and involve them in the care process. We offer lactation support and assistance to mothers to ensure proper breastfeeding and nutrition for newborns. Our NICU provides developmental care to promote healthy growth and development for premature infants.",
+      "img": "https://img.freepik.com/free-psd/maternity-room-hospital-empty-cribs-generative-ai_587448-1859.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=sph",
+      "servicesAndFacilities": [
+        "Our team of neonatologists, neonatal nurses, and neonatal specialists provide specialized care for premature newborns and critically ill infants.",
+        "Our NICU is equipped with advanced medical technologies, including incubators and ventilators, to provide the necessary support for newborns' delicate health.",
+        "We offer a sterile and controlled environment in the NICU, implementing strict infection control measures to prevent infections and ensure newborns' safety.",
+        "Our NICU team collaborates with families to provide emotional support and involve them in the care process.",
+        "We offer lactation support and assistance to mothers to ensure proper breastfeeding and nutrition for newborns.",
+        "Our NICU provides developmental care to promote healthy growth and development for premature infants.",
+        "We create a soothing and nurturing environment in the NICU, with dim lighting and gentle sounds, to simulate the womb and support newborns' comfort."
+      ]
+    },
+    {
+      "serviceName": "Blood Bank",
+      "description": "Our Blood Bank plays a vital role in providing a safe and reliable supply of blood and blood products for patients in need. We adhere to strict quality control measures to ensure the safety of donated blood. Our expert team of blood bank technicians performs compatibility tests to match blood types before transfusions. We maintain a diverse inventory of blood types to meet the demands of various medical conditions and emergencies. Our blood bank is open 24/7 to cater to emergency situations and scheduled procedures. We follow stringent protocols for blood collection, storage, and transfusion to maintain the highest level of safety and efficacy. Our blood donation campaigns promote voluntary blood donation and raise awareness about its life-saving impact.",
+      "img": "https://img.freepik.com/free-photo/friendly-hospital-phlebotomist-collecting-blood-sample-from-patient-lab-preparation-blood-test-by-female-doctor-medical-uniform-table-white-bright-room_657921-879.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais",
+      "servicesAndFacilities": [
+        "Our expert team of blood bank technicians performs compatibility tests to match blood types before transfusions.",
+        "We maintain a diverse inventory of blood types to meet the demands of various medical conditions and emergencies.",
+        "Our blood bank is open 24/7 to cater to emergency situations and scheduled procedures.",
+        "We follow stringent protocols for blood collection, storage, and transfusion to maintain the highest level of safety and efficacy.",
+        "All donated blood undergoes rigorous testing for infections and diseases, ensuring the safety of recipients.",
+        "Our blood donation campaigns promote voluntary blood donation and raise awareness about its life-saving impact.",
+        "We provide blood components such as packed red blood cells, platelets, and plasma, as per patients' specific medical needs."
+      ]
+    },
+    {
+      "serviceName": "Dialysis",
+      "description": "Our Dialysis Unit provides life-saving hemodialysis treatment for patients with kidney failure. We have a team of nephrologists and dialysis nurses who administer dialysis and monitor patients' health throughout the treatment. Our Dialysis Unit is equipped with state-of-the-art hemodialysis machines that effectively remove waste and excess fluids from the blood. We offer a comfortable and supportive environment during dialysis sessions to ensure patients' well-being. Our team provides dietary counseling to help patients manage their diet and fluid intake. We offer hemodialysis services for both in-patients and out-patients, ensuring convenient access to treatment. Our Dialysis Unit strictly follows infection control protocols to prevent any complications during dialysis.",
+      "img": "https://img.freepik.com/free-photo/close-up-patient-lying-bed-with-finger-heart-rate-monitor-pulse_482257-7484.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=sph",
+      "servicesAndFacilities": [
+        "Our team of nephrologists and dialysis nurses administer dialysis and monitor patients' health throughout the treatment.",
+        "Our Dialysis Unit is equipped with state-of-the-art hemodialysis machines that effectively remove waste and excess fluids from the blood.",
+        "We offer a comfortable and supportive environment during dialysis sessions to ensure patients' well-being.",
+        "Our team provides dietary counseling to help patients manage their diet and fluid intake, ensuring better health outcomes.",
+        "We offer hemodialysis services for both in-patients and out-patients, ensuring convenient access to treatment.",
+        "Our Dialysis Unit strictly follows infection control protocols to prevent any complications during dialysis.",
+        "We offer education and support for patients and their families to manage kidney disease and promote kidney health."
+      ]
+    },
+    {
+      "serviceName": "Surgery",
+      "description": "Our Surgery Department provides a wide range of surgical services for both minor and major procedures. Our team of experienced surgeons and surgical staff use advanced surgical techniques and medical technologies to ensure successful outcomes. Our operating rooms are equipped with state-of-the-art equipment for precise surgical procedures. We follow strict pre-operative and post-operative care protocols to optimize patient recovery. Our anesthesia team ensures patient comfort and safety during surgeries. Our surgery team works closely with patients to explain procedures, address concerns, and ensure informed decision-making. We offer specialized surgical services in various disciplines, including orthopedics, general surgery, urology, and more.",
+      "img": "https://img.freepik.com/free-photo/surgeons-performing-operation-operation-theater_107420-64881.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=sph",
+      "servicesAndFacilities": [
+        "Our team of experienced surgeons and surgical staff use advanced surgical techniques and medical technologies to ensure successful outcomes.",
+        "Our operating rooms are equipped with state-of-the-art equipment for precise surgical procedures.",
+        "We follow strict pre-operative and post-operative care protocols to optimize patient recovery.",
+        "Our anesthesia team ensures patient comfort and safety during surgeries.",
+        "Our surgery team works closely with patients to explain procedures, address concerns, and ensure informed decision-making.",
+        "We offer specialized surgical services in various disciplines, including orthopedics, general surgery, urology, and more.",
+        "Our surgical care coordinators guide patients through the surgical process, providing personalized support and education."
+      ]
+    },
+    {
+      "serviceName": "Cardiac Center",
+      "description": "Our Cardiac Center offers comprehensive cardiovascular care for patients with heart-related conditions. We have a team of cardiologists, cardiac surgeons, and cardiac nurses who provide specialized care for various heart conditions. Our state-of-the-art cardiac catheterization lab enables precise diagnosis and interventional procedures. We offer non-invasive diagnostic tests, such as echocardiography and stress tests, to assess heart health. Our cardiac rehabilitation program aids in the recovery and management of heart conditions. We perform cardiac surgeries, including bypass surgery, valve repair, and stent placement, when necessary. Our Cardiac Center emphasizes preventive care and heart disease education to promote heart health in the community.",
+      "img": "https://img.freepik.com/free-photo/female-assistant-holding-tablet-with-cardiovascular-system-illustration-explaining-heart-condition-retired-person-during-covid-19-pandemic-nurse-showing-cardiology-diagnosis-gadget_482257-43173.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais",
+      "servicesAndFacilities": [
+        "Our team of cardiologists, cardiac surgeons, and cardiac nurses provide specialized care for various heart conditions.",
+        "Our state-of-the-art cardiac catheterization lab enables precise diagnosis and interventional procedures.",
+        "We offer non-invasive diagnostic tests, such as echocardiography and stress tests, to assess heart health and detect any abnormalities.",
+        "Our cardiac rehabilitation program aids in the recovery and management of heart conditions, promoting overall cardiovascular health.",
+        "We perform cardiac surgeries, including bypass surgery, valve repair, and stent placement, using advanced surgical techniques and technologies.",
+        "Our Cardiac Center emphasizes preventive care and heart disease education to promote heart health in the community.",
+        "We offer comprehensive heart disease management, including medication management and lifestyle counseling."
+      ]
+    },
+    {
+      "serviceName": "CSSD (Central Sterile Services Department)",
+      "description": "Our Central Sterile Services Department (CSSD) plays a crucial role in ensuring the safety and sterility of medical equipment and instruments. We meticulously clean, disinfect, and sterilize all surgical instruments and medical devices, adhering to strict infection control guidelines. Our CSSD uses advanced sterilization methods, such as autoclaving and ethylene oxide gas sterilization, to ensure the effectiveness of the process. We conduct regular quality control checks to maintain the highest standards of sterilization. Our CSSD team works closely with operating rooms and other clinical departments to meet their sterile equipment needs promptly. We continuously update our sterilization practices to adhere to the latest advancements in sterilization technology.",
+      "img": "https://img.freepik.com/free-photo/patients-asking-informations-filling-dental-document-preparing-teeth-exemination-senior-woman-sitting-chair-waiting-area-crowded-orthodontist-office-while-doctor-working-background_482257-3583.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais",
+      "servicesAndFacilities": [
+        "Our Central Sterile Services Department meticulously cleans, disinfects, and sterilizes all surgical instruments and medical devices, ensuring their safety and sterility.",
+        "We use advanced sterilization methods, such as autoclaving and ethylene oxide gas sterilization, to ensure the effectiveness of the process.",
+        "Our CSSD team conducts regular quality control checks to maintain the highest standards of sterilization.",
+        "We work closely with operating rooms and other clinical departments to meet their sterile equipment needs promptly.",
+        "Our CSSD continuously updates its sterilization practices to adhere to the latest advancements in sterilization technology.",
+        "Our trained CSSD staff strictly follows standard operating procedures to prevent cross-contamination and ensure patient safety.",
+        "We provide ongoing training to CSSD staff to enhance their knowledge of sterilization techniques and infection control."
+      ]
+    }
+  ]
+  

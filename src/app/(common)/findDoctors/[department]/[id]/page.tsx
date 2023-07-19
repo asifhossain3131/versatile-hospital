@@ -1,4 +1,5 @@
 import NewsLetterInputField from '@/app/components/NewsLetterInputField';
+import PrimaryBanner from '@/app/components/PrimaryBanner';
 import PrimaryButton from '@/app/components/buttons/PrimaryButton';
 import SeconderyButton from '@/app/components/buttons/SeconderyButton';
 import getDoctorById from '@/utils/getDoctorById';
@@ -10,8 +11,9 @@ const SingleDoctorPage =async ({params:{id}}:any) => {
     const doctor=await getDoctorById(id)
     const{name,department,image,degrees,title,rank,experiences,availableDaysAndTime,description,fees,institution}=doctor
     return (
-        <div className=' bg-gray-300'>
-           <h1 className='text-center font-semibold lg:text-2xl text-blue-800 mb-4 p-4 bg-white '>Department of {department}</h1>
+    <>
+    <PrimaryBanner title={`Department of ${department}`}></PrimaryBanner>
+        <div className=' bg-blue-gray-50 p-4'>
   <div className=' flex flex-col lg:flex-row gap-4 justify-center mx-6 lg:mx-12'>
   <div className='bg-white lg:w-8/12 p-4 mx-auto'>
 <div className='flex gap-4'>
@@ -69,6 +71,7 @@ const SingleDoctorPage =async ({params:{id}}:any) => {
             
   </div>
         </div>
+    </>
     );
 };
 

@@ -6,9 +6,10 @@ import Link from "next/link";
 const FindDoctorsPage = async() => {
 const allDepartments= getAllDepartments()
     return (
-    <div>
-        <PrimaryBanner></PrimaryBanner>
-<div className="flex flex-col lg:flex-row gap-4  mx-6 lg:mx-12 my-12">
+    <>
+        <PrimaryBanner title='find your doctor'></PrimaryBanner>
+<div className=" bg-blue-gray-50 p-4">
+<div className="flex flex-col lg:flex-row gap-4 my-4 mx-6 lg:mx-12 ">
 <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
           {
             allDepartments.sort().map((department,i)=>
@@ -27,7 +28,8 @@ const allDepartments= getAllDepartments()
         </div>
         <DepartmentSearchCard></DepartmentSearchCard>
 </div>
-    </div>
+</div>
+    </>
     );
 };
 
