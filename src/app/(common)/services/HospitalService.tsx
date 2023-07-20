@@ -1,15 +1,27 @@
 import SectionTitle from "@/app/components/section title/SectionTitle";
+import getHospitalServiceNames from "@/utils/getHospitalServiceNames";
+import Link from "next/link";
 import React from "react";
+export const revalidate=false
 
-const HospitalService = () => {
+const HospitalService = async() => {
+  const allServices=await getHospitalServiceNames()
   return (
     <>
       <SectionTitle
         title="hospital services"
         subtitle="Versatile offers vast facilities and ensures every services carefully"
       ></SectionTitle>
-      <div>
-        
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mx-6 lg:mx-12">
+        {
+          allServices.sort().map((service:string,id:number)=>
+        <Link key={id} href={`/services/${service}`}>
+        <div className="bg-blue-400 p-4 h-[70px] flex items-center text-gray-800 font-semibold rounded">
+           <h1>{service}</h1>
+        </div>
+        </Link>
+          )
+        }
       </div>
     </>
   );
