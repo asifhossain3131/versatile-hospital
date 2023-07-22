@@ -12,9 +12,9 @@ const SingleServicePage = async({params}:any) => {
         <>
             <PrimaryBanner title={service.serviceName}></PrimaryBanner>
             <div className="bg-blue-gray-50 p-4 flex flex-col lg:flex-row gap-2">
-     <div className='w-11/12 lg:w-9/12 mx-auto'>
+     <div className='w-11/12 lg:w-3/4 mx-6 lg:mx-12'>
         <Image alt='service' src={img} width={600} height={300}></Image>
-       <div className='lg:w-3/4'>
+       <div className='w-full'>
        <h1 className='text-blue-800 p-3 font-semibold lg:text-2xl'>Why important?</h1>
         <p className='text-sm'>{description}</p>
        </div>
@@ -27,8 +27,8 @@ const SingleServicePage = async({params}:any) => {
         }
        </ul>
      </div>
-     <div className='mx-6 bg-red-500 w-1/2'>
-    {/* <LatestNews></LatestNews> */}
+     <div className='mx-6'>
+    <LatestNews></LatestNews>
      </div>
       </div>
         </>

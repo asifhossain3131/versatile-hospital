@@ -19,6 +19,13 @@ export const getDiagnosticServiesNamesFromDb=async()=>{
     const db=await DbConnect()
     const diagnosticServiceCollection=db.collection('diagnosticServices')
      const servies=await diagnosticServiceCollection.find().toArray()
-     const serviceNames=servies.map((service:any)=>service.serviceName)
+     const serviceNames=servies.map((service:any)=>service.serviceType)
      return serviceNames
+}
+export const getSingleDiagnosticServiceFromDb=async(serviceName:string)=>{
+    const db=await DbConnect()
+    const diagnosticServiceCollection=db.collection('diagnosticServices')
+     const service=await diagnosticServiceCollection.findOne({serviceType:serviceName})
+     const tests=service?.tests
+     return tests
 }
