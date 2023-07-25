@@ -59,7 +59,8 @@ const Header = () => {
       >
         About us
       </Typography>
-      <Typography
+  <Link href={'/career'}>
+  <Typography
         as="li"
         variant="small"
         color="blue-gray"
@@ -67,6 +68,7 @@ const Header = () => {
       >
         Career
       </Typography>
+  </Link>
       <Typography
         as="li"
         variant="small"
