@@ -12,6 +12,8 @@ import Link from "next/link";
 import useAuth from "@/hooks/useAuth";
 import { useForm, SubmitHandler } from "react-hook-form"
 import { useRouter, useSearchParams } from 'next/navigation'
+import { toast } from "react-toastify";
+import SocialLoginButton from "@/app/components/buttons/SocialLoginButton";
 
 type Inputs = {
   email:string
@@ -19,7 +21,8 @@ type Inputs = {
 }
 const LoginCard = () => {
     const [hidden,setHidden]=useState(true)
-    const{signIn}=useAuth()
+    const[error,setError]=useState('')
+    const{signIn}:any=useAuth()
     const search=useSearchParams()
     const {replace}=useRouter()
     const from=search.get('redirectUrl') || '/'
@@ -30,14 +33,16 @@ const LoginCard = () => {
       formState: { errors },
     } = useForm<Inputs>()
     const formSubmit: SubmitHandler<Inputs> = (data) => {
+      setError('')
      const{email,password}=data
    signIn(email,password)
    .then((res:any)=>{
     reset()
     replace(from)
+    toast('Login successful')
    })
    .catch((err:any)=>{
-    console.log(err.message)
+   setError('User not found!')
    })
     }
     return (
@@ -50,6 +55,7 @@ const LoginCard = () => {
             <Input {...register("email", { required: true })} type="email" size="lg" label="Email" />
             <Input {...register("password", { required: true })} type={hidden? 'password':'text'} label="Password" icon={hidden? <EyeIcon onClick={()=>setHidden(!hidden)} className="cursor-pointer"></EyeIcon> : <EyeSlashIcon className="cursor-pointer" onClick={()=>setHidden(!hidden)}></EyeSlashIcon>} />
           </div>
+          <p className="text-red-600">{error}</p>
           <Checkbox
             label={
               (
@@ -83,15 +89,7 @@ const LoginCard = () => {
             </Link>
           </Typography>
         </form>
-        <Button
-        size="lg"
-        variant="outlined"
-        color="blue-gray"
-        className="flex items-center gap-3 justify-center"
-      >
-        <img src="https://cdn-icons-png.flaticon.com/128/300/300221.png" alt="metamask" className="h-6 w-6" />
-        Continue with Google
-      </Button>
+       <SocialLoginButton></SocialLoginButton>
       </Card>
     );
 };

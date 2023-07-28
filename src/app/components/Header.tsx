@@ -9,9 +9,11 @@ import {
   Input
 } from "@material-tailwind/react";
 import Link from "next/link";
+import useAuth from "@/hooks/useAuth";
 
 const Header = () => {
   const [openNav, setOpenNav] = React.useState(false);
+  const{user}:any=useAuth()
 
   React.useEffect(() => {
     window.addEventListener(
@@ -69,7 +71,8 @@ const Header = () => {
         Career
       </Typography>
   </Link>
-      <Typography
+  {user &&   <Link href={'/dashboard'}>
+   <Typography
         as="li"
         variant="small"
         color="blue-gray"
@@ -77,6 +80,7 @@ const Header = () => {
       >
         Dashboard
       </Typography>
+   </Link>}
     </ul>
   );
 

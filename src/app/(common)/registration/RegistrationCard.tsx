@@ -4,32 +4,46 @@ import { useState } from "react";
 import Link from "next/link";
 import { useForm, SubmitHandler } from "react-hook-form"
 import useAuth from "@/hooks/useAuth";
+import { toast } from "react-toastify";
 
 type Inputs = {
   name: string
   phoneNumber: string
   email:string
   password:string
+  confirmPassword:string
 }
 const RegistrationCard = () => {
-  const{createUser,profileUpdate}=useAuth()
+  const{createUser,profileUpdate}:any=useAuth()
   const {
     register,
     handleSubmit,
     reset,
+    getValues,
     formState: { errors },
   } = useForm<Inputs>()
-  const formSubmit: SubmitHandler<Inputs> = (data) => {
-   const{name,phoneNumber,email,password}=data
- createUser(email,password)
- .then((res:any)=>{
-  profileUpdate(name)
+  const formSubmit: SubmitHandler<Inputs> =async (data) => {
+   const{name,phoneNumber,email,password}=data 
+   const user={name,phoneNumber,email,role:'user'}
+   const toastId=toast.loading('Registering new user',{position:'top-center'})
+ try {
+  await createUser(email,password)
+  await profileUpdate(name)
+  const res=await fetch('../../api/createUser',{
+    method:'POST',
+    headers:{
+      'content-type':'application/json'
+    },
+    body:JSON.stringify(user)
+  })
+  const data=await res.json()
+  toast.dismiss(toastId)
+  toast.success('Registration successful',{position:'top-center'})
   reset()
-  console.log(res.user)
- })
- .catch((err:any)=>{
-  console.log(err.message)
- })
+ } catch (error:any) {
+  toast.dismiss(toastId)
+  toast.error(error?.message||'Something went wrong',{position:'top-center'})
+ }
   }
   return (
     <Card
@@ -46,6 +60,12 @@ const RegistrationCard = () => {
           <Input  {...register("phoneNumber", { required: true })} type="tel" size="lg" label="Phone number" />
           <Input  {...register("email", { required: true })} type="email" size="lg" label="Email" />
           <Input  {...register("password", { required: true })} type="password" size="lg" label="Password" />
+          <Input  {...register("confirmPassword", { required: true,
+          validate: (value)=>value===getValues('password') || 'The password do not match'
+          })} type="password" size="lg" label="Confirm Password" />
+          {
+            errors.confirmPassword && (<span className="text-red-600">{errors.confirmPassword.message||'Please provide correct password'}</span>)
+          }
         </div>
         <Button type="submit" className="mt-6" fullWidth>
           Register

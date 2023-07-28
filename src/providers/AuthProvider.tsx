@@ -14,12 +14,12 @@ const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   const [loading, setLoading] = useState<boolean>(true);
 
   // authentication functionalities
-  const createUser = (email: string, password: string) => {
+  const createUser= (email: string, password: string) => {
     setLoading(true);
     return createUserWithEmailAndPassword(auth, email, password);
   };
 
-  const profileUpdate = (name: string, photo: string) => {
+  const profileUpdate = async (name: string, photo: string) => {
     setLoading(true);
     return updateProfile(auth.currentUser as User, {
       displayName: name,
