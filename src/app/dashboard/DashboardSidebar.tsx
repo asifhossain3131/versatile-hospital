@@ -1,18 +1,9 @@
 'use client'
 import { Avatar } from "@material-tailwind/react";
-import {
-    PresentationChartBarIcon,
-    ShoppingBagIcon,
-    UserCircleIcon,
-    Cog6ToothIcon,
-    InboxIcon,
-    PowerIcon,
-  } from "@heroicons/react/24/solid";
 import useAuth from "@/hooks/useAuth";
-import AuthContext from "@/contexts/AuthContext";
-import { useContext } from "react";
 
 const DashboardSidebar = () => {
+
   const{user}:any=useAuth()
   const userInfos=[
     {

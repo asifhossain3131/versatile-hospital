@@ -39,7 +39,7 @@ const LoginCard = () => {
    .then((res:any)=>{
     reset()
     replace(from)
-    toast('Login successful')
+    toast.success('Login successful',{position:'top-center'})
    })
    .catch((err:any)=>{
    setError('User not found!')

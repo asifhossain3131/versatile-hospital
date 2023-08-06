@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useForm, SubmitHandler } from "react-hook-form"
 import useAuth from "@/hooks/useAuth";
 import { toast } from "react-toastify";
+import SocialLoginButton from "@/app/components/buttons/SocialLoginButton";
 
 type Inputs = {
   name: string
@@ -80,19 +81,7 @@ const RegistrationCard = () => {
           </Link>
         </Typography>
       </form>
-      <Button
-        size="lg"
-        variant="outlined"
-        color="blue-gray"
-        className="flex items-center gap-3 justify-center"
-      >
-        <img
-          src="https://cdn-icons-png.flaticon.com/128/300/300221.png"
-          alt="metamask"
-          className="h-6 w-6"
-        />
-        Continue with Google
-      </Button>
+   <SocialLoginButton></SocialLoginButton>
     </Card>
   );
 };

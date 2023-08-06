@@ -8,9 +8,20 @@ const SocialLoginButton = () => {
     const handleGoogleLogin=async()=>{
         const toastId=toast.loading('Sigining in',{position:'top-center'})
         try {
-         await  googleLogin()
+        const res= await  googleLogin()
+         if(res){
           toast.dismiss(toastId)
           toast.success('sign in successful',{position:'top-center'})
+          const user={name:res.user.displayName, email:res.user.email,role:'user'}
+          const response=await fetch('../../api/createUser',{
+            method:'POST',
+            headers:{
+              'content-type':'application/json'
+            },
+            body:JSON.stringify(user)
+          })
+          const data=await response.json()
+         }
         } catch (error) {
           toast.dismiss(toastId)
           toast.error('Something went wrong!',{position:'top-center'})
