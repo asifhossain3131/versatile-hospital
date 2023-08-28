@@ -5,17 +5,18 @@ import {
   Dialog,
   DialogHeader,
   DialogBody,
-  DialogFooter,
   Input,
   Textarea,
 } from "@material-tailwind/react";
 import useAuth from "@/hooks/useAuth";
 import { useForm, SubmitHandler } from "react-hook-form"
+import { toast } from "react-toastify";
 
 type Props={
     title:string
     doctorName:string
     department:string
+    fees:string
 }
 type Inputs={
 name:string
@@ -26,7 +27,7 @@ doctor:string
 department:string
 note:string
 }
-const SeconderyButton = ({title,doctorName,department}:Props) => {
+const SeconderyButton = ({title,doctorName,department,fees}:Props) => {
   const {
     register,
     handleSubmit,
@@ -39,17 +40,21 @@ const SeconderyButton = ({title,doctorName,department}:Props) => {
      setOpen(!open)
     }
     const handleAppointment: SubmitHandler<Inputs> = async(data) => {
+      const appointmentData={...data,fees}
       try {
         const response = await fetch('/api/doctorAppointment', {
           method: 'POST',
           headers:{
             'content-Type': 'application/json',
           },
-          body: JSON.stringify(data),
+          body: JSON.stringify(appointmentData),
         });
-        if (response.ok) {
-          const dataInfo = await response.json();
+        const dataInfo = await response.json();
+        if (dataInfo.success===true) {
           setOpen(!open)
+          toast.success('Appointment placed successfully. Pay now to secure!',{
+            position:'top-center'
+          })
         reset()
         } else {
           // Handle error, display an error message, etc.

@@ -1,5 +1,5 @@
 'use client'
-import React from 'react';
+import React, { useState } from 'react';
 import {UserIcon } from "@heroicons/react/24/outline";
 import { Button, Card, CardBody, CardFooter, CardHeader,   Menu,
   MenuHandler,
@@ -16,13 +16,22 @@ import {
 } from "@heroicons/react/24/outline";
 import useAuth from "@/hooks/useAuth";
 import { useRouter } from 'next/navigation';
+import getAllDepartments from '@/utils/getAllDepartments';
+import { SubmitHandler, useForm } from 'react-hook-form';
+import { toast } from 'react-toastify';
 
-
+type Inputs = {
+  name: string,
+  note:string
+};
 const SubHeader = () => {
   const{user,logOut}:any=useAuth()
     const [open, setOpen] = React.useState(false);
-    const handleOpen = () => setOpen((cur) => !cur);
+    const[department,setDepartment]=useState('')
+    // const handleOpen = () => setOpen((cur) => !cur);
     const {refresh}=useRouter()
+    const allDepartments=getAllDepartments()
+    const { register, handleSubmit, reset, formState: { errors } } = useForm<Inputs>();
 
     // profile menu component
 const profileMenuItems = [
@@ -117,6 +126,28 @@ function ProfileMenu() {
     </Menu>
   );
 }
+
+const onSubmit: SubmitHandler<Inputs> = async(data) => {
+ const appointmentData={...data,email:user?.email,department}
+ try {
+   const res=await fetch('/api/doctorAppointment/telemedicine',{
+    method:'POST',
+    headers:{
+      'Content-Type':'application/json'
+    },
+    body:JSON.stringify(appointmentData)
+   })
+   const data=await res?.json()
+   if(data.success===true){
+    toast.success('Appointments placed successfully. Pay to secure it.',{
+      position:'top-center'
+    })
+    setOpen(!open)
+   }
+ } catch (error:any) {
+  toast.error(error?.message)
+ }
+}
     return (
       <>
         <div className='bg-light-blue-900 p-3 text-white flex justify-between flex-wrap gap-2'>
@@ -134,7 +165,7 @@ function ProfileMenu() {
             </div>
                }
                 <Button
-                onClick={handleOpen}
+                onClick={()=>setOpen(!open)}
                 variant="gradient"
                 size="sm"
               >
@@ -145,7 +176,7 @@ function ProfileMenu() {
         <Dialog
         size="xs"
         open={open}
-        handler={handleOpen}
+        handler={()=>setOpen(!open)}
         className="bg-transparent shadow-none"
       >
         <Card className="mx-auto w-full rounded-none max-w-[24rem]">
@@ -157,25 +188,27 @@ function ProfileMenu() {
               Telemedicine
             </Typography>
           </CardHeader>
-          <CardBody className="flex flex-col gap-4">
-            <Input label="Patient name" size="lg"/>
-            <Input label="Patient email" size="lg" />
-            <Input label="Illness" size="lg" />
+        <form onSubmit={handleSubmit(onSubmit)}>
+        <CardBody className="flex flex-col gap-4">
+            <Input {...register("name", { required: true })} label="Patient name" size="lg" defaultValue={user?.displayName}/>
+            <Input label="Patient email" size="lg" value={user?.email} />
+            <Input {...register("note", { required: true })} label="Illness" size="lg" />
             <div className="w-full">
-      <Select label="Choose a department">
-        <Option>Cardiology</Option>
-        <Option>Gastrenology</Option>
-        <Option>Neurology</Option>
-        <Option>Anesthesia</Option>
-        <Option>Chest</Option>
+      <Select onChange={(value:any)=>setDepartment(value)} value={department} label="Choose a department">
+        {
+          allDepartments?.sort().map((department,i)=>
+          <Option  key={i} value={department}>{department}</Option>
+          )
+        }
       </Select>
     </div>
           </CardBody>
           <CardFooter className="pt-0">
-            <Button variant="gradient" onClick={handleOpen} fullWidth>
+            <Button type='submit' variant="gradient" fullWidth>
               Get an appointment
             </Button>
           </CardFooter>
+        </form>
         </Card>
       </Dialog>
       </>

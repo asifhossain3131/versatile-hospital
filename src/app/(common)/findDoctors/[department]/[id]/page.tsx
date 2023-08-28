@@ -28,7 +28,7 @@ const SingleDoctorPage =async ({params:{id}}:any) => {
         </ul>
         <p className='text-gray-600 mb-2'>{institution}</p>
         <p className='text-gray-700 mb-3'>{rank} consultant</p>
-        <SeconderyButton title='Make an appointment' doctorName={`${name}`} department={`${department}` }></SeconderyButton>
+        <SeconderyButton title='Make an appointment' doctorName={`${name}`} department={`${department}`} fees={`${fees}`}></SeconderyButton>
     </div>
 </div>
 <div className='p-4 text-gray-600 mt-4'>

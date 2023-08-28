@@ -20,7 +20,7 @@ const DashboardSidebar = () => {
     {
       img:'https://cdn-icons-png.flaticon.com/128/4108/4108841.png',
       title:'Hospital Payments',
-      path:''
+      path:'/dashboard/user/myPayments'
     },
     {
       img:'https://cdn-icons-png.flaticon.com/128/1431/1431096.png',

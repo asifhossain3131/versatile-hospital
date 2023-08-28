@@ -5,7 +5,7 @@ import MyAppointmentsTable from "./MyAppointmentsTable";
 export const revalidate=0
 
 const MyAppointmentsPage =async () => {
-    const appointments=await getPersonalAppointments('dere@khkh.com')
+    const appointments=await getPersonalAppointments()
     return (
         <div className=" lg:w-9/12 mx-auto text-center">
             <h1 className="font-semibold mt-12 text-xl">My Appointments: {appointments?.length}</h1>

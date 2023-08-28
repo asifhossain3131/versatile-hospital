@@ -5,6 +5,7 @@ import { Avatar, Badge, Input, Option, Select } from "@material-tailwind/react";
 import { useEffect, useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form"
 import useProfile from "@/hooks/useProfile";
+import Cookies from "js-cookie";
 
 type Inputs = {
   newName:string

@@ -2,8 +2,8 @@ import { getPersonalAppointmentsFromDB } from '@/services/doctorAppointment.serv
 import React, { cache } from 'react';
 import 'server-only'
 
-const getPersonalAppointments = cache((email:string) => {
-    return getPersonalAppointmentsFromDB(email)
+const getPersonalAppointments = cache(() => {
+    return getPersonalAppointmentsFromDB()
 })
   
 

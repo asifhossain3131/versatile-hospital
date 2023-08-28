@@ -3,6 +3,7 @@ import auth, { googleProvider } from "@/firebase/firebase.auth";
 import createJWT from "@/utils/createJWT";
 import { User, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import React, { ReactNode, useEffect, useState } from 'react';
+import Cookies from 'js-cookie';
 
 interface AuthProviderProps {
   children: ReactNode;
@@ -50,6 +51,7 @@ const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
         createJWT(user)
         .then((res:any)=>{
           setLoading(false);
+          Cookies.set('versatileUserEmail',`${currentUser.email}`,{expires:7})
         })
       }
     });

@@ -1,35 +1,7 @@
 'use client'
 import { Card, Typography } from "@material-tailwind/react";
  
-const TABLE_HEAD = ["Patient name", "Doctor name", "Department", "Date","Change Date"];
- 
-const TABLE_ROWS = [
-  {
-    name: "John Michael",
-    job: "Manager",
-    date: "23/04/18",
-  },
-  {
-    name: "Alexa Liras",
-    job: "Developer",
-    date: "23/04/18",
-  },
-  {
-    name: "Laurent Perrier",
-    job: "Executive",
-    date: "19/09/17",
-  },
-  {
-    name: "Michael Levi",
-    job: "Developer",
-    date: "24/12/08",
-  },
-  {
-    name: "Richard Gran",
-    job: "Manager",
-    date: "04/10/21",
-  },
-];
+const TABLE_HEAD = ["Patient name", "Doctor name", "Department", "Date","Type","Status","Payment"];
 
 type AppointmentInfo={
     _id:string
@@ -37,6 +9,8 @@ type AppointmentInfo={
     doctor:string
     department:string
     date:string
+    type:string
+    status:string
 }
 const MyAppointmentsTable = ({appointments}:any) => {
     return (
@@ -58,8 +32,8 @@ const MyAppointmentsTable = ({appointments}:any) => {
           </tr>
         </thead>
         <tbody>
-          {appointments?.map(({_id, name,doctor,department, date }:AppointmentInfo,index:number) => {
-            const isLast = index === TABLE_ROWS.length - 1;
+          {appointments?.map(({_id, name,doctor,department, date,type,status}:AppointmentInfo,index:number) => {
+            const isLast = index === appointments?.length - 1;
             const classes = isLast ? "p-4" : "p-4 border-b border-blue-gray-50";
  
             return (
@@ -82,12 +56,22 @@ const MyAppointmentsTable = ({appointments}:any) => {
               
                 <td className={`${classes} bg-blue-gray-50/50`}>
                 <Typography variant="small" color="blue-gray" className="font-normal">
-                    {date}
+                    {date || 'Check email'}
+                  </Typography>
+                </td>
+                <td className={`${classes} `}>
+                <Typography variant="small" color="blue-gray" className="font-normal">
+                    {type}
+                  </Typography>
+                </td>
+                <td className={`${classes} bg-blue-gray-50/50`}>
+                <Typography variant="small" color="blue-gray" className={`font-normal ${status==='pending'?'text-red-600':'text-green-600'}`}>
+                    {status}
                   </Typography>
                 </td>
                 <td className={classes}>
                   <Typography  variant="small" color="blue-gray" className="font-medium">
-                    Edit
+                    <button className="font-semibold">Pay</button>
                   </Typography>
                 </td>
               </tr>
