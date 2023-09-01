@@ -1,14 +1,11 @@
-import { getPayments } from '@/services/payments.service';
-import React from 'react';
-export const revalidate=0
+import PaymentTable from './PaymentTable'
+export const  revalidate=0
 
 const MyPaymentsPage = async() => {
-    const payments=await getPayments()
-     const duesPayments=payments?.paymentsDues
-     const successfulPayments=payments?.paymentsSuccessul
     return (
         <div>
-            
+            <h1 className='text-xl font-medium text-center mt-12'>All Payments List</h1>
+        <PaymentTable></PaymentTable>
         </div>
     );
 };

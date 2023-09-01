@@ -12,7 +12,7 @@ export const POST=async(req:any)=>{
                 return NextResponse.json({message: 'user already exist' })
             }
             const result=await userCollection.insertOne(user)
-            return NextResponse.json({message: 'user inserted successfully',insertedId: result.insertedId })
+            return NextResponse.json({success:true,message: 'user inserted successfully',insertedId: result.insertedId })
         } catch (error) {
             return NextResponse.json({message:'Something went wrong'})
         }

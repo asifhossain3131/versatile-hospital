@@ -9,20 +9,12 @@ const max = 99999;
     const paymentsCollection = db.collection('payments'); 
     const previousDue=await paymentsCollection.findOne({email:email})
     if(previousDue){
-        await paymentsCollection.updateOne({email}, {$push:{paymentsDues:{paymentId:`${new Date().getDate()}${fees}${Math.floor(Math.random() * (max - min + 1)) + min}`,paymentsFor:paymentReason,paymentCreated:new Date(),package:packageName,packagePrice:fees}}})
+        await paymentsCollection.updateOne({email}, {$push:{allPayments:{paymentId:`${new Date().getDate()}${fees}${Math.floor(Math.random() * (max - min + 1)) + min}`,paymentsFor:paymentReason,paymentCreated:new Date(),package:packageName,packagePrice:fees,status:'pending'}}})
     }else{
       const newPaymentDetail={
        email,
-       paymentsDues:[{paymentId:`${new Date().getDate()}${fees}${Math.floor(Math.random() * (max - min + 1)) + min}`,paymentsFor:paymentReason,paymentCreated:new Date(),package:packageName,packagePrice:fees}]
+       allPayments:[{paymentId:`${new Date().getDate()}${fees}${Math.floor(Math.random() * (max - min + 1)) + min}`,paymentsFor:paymentReason,paymentCreated:new Date(),package:packageName,packagePrice:fees,status:'pending'}]
       }
       await paymentsCollection.insertOne(newPaymentDetail)
     }
-}
-
-export const getPayments=async()=>{
-  const userEmail=cookies().get('versatileUserEmail')?.value
-  const db=await  DbConnect()
-  const paymentsCollection = db.collection('payments');
-  const result=await paymentsCollection.findOne({email:userEmail})
-  return result
 }

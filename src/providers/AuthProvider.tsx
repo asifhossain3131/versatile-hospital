@@ -51,8 +51,11 @@ const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
         createJWT(user)
         .then((res:any)=>{
           setLoading(false);
-          Cookies.set('versatileUserEmail',`${currentUser.email}`,{expires:7})
+          Cookies.set('versatileUserEmail',`${currentUser.email}`)
         })
+      }
+      else{
+        Cookies.remove('versatileUserEmail')
       }
     });
     return () => unsubscribe();
