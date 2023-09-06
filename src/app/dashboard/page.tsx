@@ -46,7 +46,7 @@ const targetUser=currentUser?.user
     const updatedName=user?.displayName 
     const email=user?.email
     const updatedInfos={updatedName,newPhoneNumber,newAddress,newDateOfBirth,newNationality,newOfficalID,newOccupation,CurrentGender,email}
-    fetch('../api/updateUser',{
+    fetch('/api/updateUser',{
      method:'PUT',
      headers:{
       'content-type':'application/json'

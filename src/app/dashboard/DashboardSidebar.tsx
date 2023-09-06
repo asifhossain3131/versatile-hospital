@@ -6,7 +6,7 @@ import Link from "next/link";
 const DashboardSidebar = () => {
 
   const{user}:any=useAuth()
-  const role:string='user'
+  const role:string='doctor'
   const userInfos=[
     {
       img:'https://cdn-icons-png.flaticon.com/128/942/942810.png',
@@ -38,7 +38,34 @@ const DashboardSidebar = () => {
     {
       img:'https://cdn-icons-png.flaticon.com/128/1021/1021799.png',
       title:'Add Doctors',
+      path:'/dashboard/admin/addDoctors'
+    },
+    {
+      img:'https://cdn-icons-png.flaticon.com/128/5586/5586041.png',
+      title:'Add Service',
+      path:'/dashboard/user/myPayments'
+    },
+    {
+      img:'https://cdn-icons-png.flaticon.com/128/1945/1945644.png',
+      title:'Add Circulars',
       path:''
+    },
+    {
+      img:'https://cdn-icons-png.flaticon.com/128/10349/10349144.png',
+      title:'Requested Funds',
+      path:'/dashboard/'
+    },
+    {
+      img:'https://cdn-icons-png.flaticon.com/128/5433/5433801.png',
+      title:'Notice Board',
+      path:'/dashboard/'
+    }
+  ]
+  const doctorInfos=[
+    {
+      img:'https://cdn-icons-png.flaticon.com/128/920/920988.png',
+      title:'Doctor Profile',
+      path:'/dashboard/doctor/doctorProfile'
     },
     {
       img:'https://cdn-icons-png.flaticon.com/128/5586/5586041.png',
@@ -85,6 +112,16 @@ const DashboardSidebar = () => {
             }
             {
               role==='admin' && adminInfos.map((info,i)=>
+              <Link href={info?.path}>
+                <li key={i} className="flex items-center gap-x-2 px-3 py-2 hover:bg-blue-gray-400 rounded">
+                  <img src={info.img} alt=""  className="w-[30px]"/>
+                  <span className="hidden lg:inline-block">{info.title}</span>
+                </li>
+              </Link>
+                )
+            }
+            {
+              role==='doctor' && doctorInfos.map((info,i)=>
               <Link href={info?.path}>
                 <li key={i} className="flex items-center gap-x-2 px-3 py-2 hover:bg-blue-gray-400 rounded">
                   <img src={info.img} alt=""  className="w-[30px]"/>

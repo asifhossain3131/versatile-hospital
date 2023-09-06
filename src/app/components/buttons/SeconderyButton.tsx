@@ -16,18 +16,16 @@ type Props={
     title:string
     doctorName:string
     department:string
-    fees:string
+    id:string
 }
 type Inputs={
 name:string
 email:string
 date:string
 phone:number 
-doctor:string 
-department:string
 note:string
 }
-const SeconderyButton = ({title,doctorName,department,fees}:Props) => {
+const SeconderyButton = ({title,doctorName,department,id}:Props) => {
   const {
     register,
     handleSubmit,
@@ -40,7 +38,7 @@ const SeconderyButton = ({title,doctorName,department,fees}:Props) => {
      setOpen(!open)
     }
     const handleAppointment: SubmitHandler<Inputs> = async(data) => {
-      const appointmentData={...data,fees}
+      const appointmentData={...data,doctorId:id}
       try {
         const response = await fetch('/api/doctorAppointment', {
           method: 'POST',
@@ -79,8 +77,8 @@ const SeconderyButton = ({title,doctorName,department,fees}:Props) => {
           <Input {...register("phone", { required: true })} type="tel" variant="static" placeholder="Phone number" />
           </div>
           <div className="flex gap-4">
-          <Input {...register("doctor", { required: true })} variant="static" value={doctorName} placeholder="Doctor name" />
-          <Input {...register("department", { required: true })} variant="static" value={department} placeholder="Department" />
+          <Input  variant="static" value={doctorName} placeholder="Doctor name" />
+          <Input  variant="static" value={department} placeholder="Department" />
           </div>
           <Textarea {...register("note")} variant="static" placeholder="Add a note" />
           <Button type="submit" variant="gradient" color="green" className="rounded-none mt-2">

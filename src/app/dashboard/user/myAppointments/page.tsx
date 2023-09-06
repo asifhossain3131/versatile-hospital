@@ -17,7 +17,7 @@ const MyAppointmentsPage =async () => {
                 <div className="">
                 <h1 className="text-red-500 font-semibold mb-2 text-lg">You do not have any appointments.</h1>
                 <h2 className="mb-8 text-green-500 font-semibold text-md">Need to appoint a doctor?</h2>
-                <Link href={'/doctorAppointment'} className="bg-blue-800 text-white px-4 py-2 rounded-lg">
+                <Link href={'/findDoctors'} className="bg-blue-800 text-white px-4 py-2 rounded-lg">
                 Appoint Now
                 </Link>
               </div>

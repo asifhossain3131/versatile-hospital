@@ -9,7 +9,7 @@ export const revalidate=0
 
 const SingleDoctorPage =async ({params:{id}}:any) => {
     const doctor=await getDoctorById(id)
-    const{name,department,image,degrees,title,rank,experiences,availableDaysAndTime,description,fees,institution}=doctor
+    const{name,department,image,degrees,title,rank,experiences,availableDaysAndTime,description,fees,institution,}=doctor
     return (
     <>
     <PrimaryBanner title={`Department of ${department}`}></PrimaryBanner>
@@ -28,7 +28,7 @@ const SingleDoctorPage =async ({params:{id}}:any) => {
         </ul>
         <p className='text-gray-600 mb-2'>{institution}</p>
         <p className='text-gray-700 mb-3'>{rank} consultant</p>
-        <SeconderyButton title='Make an appointment' doctorName={`${name}`} department={`${department}`} fees={`${fees}`}></SeconderyButton>
+        <SeconderyButton title='Make an appointment' doctorName={`${name}`} department={`${department}`} id={`${id}`}></SeconderyButton>
     </div>
 </div>
 <div className='p-4 text-gray-600 mt-4'>

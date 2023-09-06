@@ -5,6 +5,8 @@ import { NextResponse } from 'next/server';
 export const POST=async(request:any)=> {
   if (request.method === 'POST') {
     try {
+      const min = 10000; 
+      const max = 99999;
         const body=await request.json()
         const department=body.department
 
@@ -23,10 +25,11 @@ export const POST=async(request:any)=> {
         doctorName=departmentDoctors[0]?.name
         fees=departmentDoctors[0]?.fees
       }
-      const appointment={...body,doctor:doctorName,type:'telemedicine',status:'pending'}
+      const paymentId=`${new Date().getDate()}${fees}${Math.floor(Math.random() * (max - min + 1)) + min}`
+      const appointment={...body,doctor:doctorName,type:'telemedicine',status:'pending',paymentId}
       const result = await appointmentCollection.insertOne(appointment)
       if(result.acknowledged===true){
-        await makeDuePayments(body?.email,'Doctor appointment',doctorName,fees)
+        await makeDuePayments(body?.email,'Doctor appointment',doctorName,fees,paymentId)
        }
 
       return NextResponse.json({success:true,message: 'Data posted successfully', insertedId: result.insertedId })

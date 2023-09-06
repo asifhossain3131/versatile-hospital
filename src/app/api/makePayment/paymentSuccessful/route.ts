@@ -9,6 +9,8 @@ export const POST=async(request:any)=>{
     const paymentId=searchParams.get('paymentId')
 const db=await DbConnect()
 const paymentsCollection=db.collection('payments')
+const appointmentCollection=db.collection('doctorAppointments')
+
 const updatedPayment=await paymentsCollection.updateOne({email:email,"allPayments.paymentId": paymentId},{
     $set:{
         "allPayments.$.paymentCreated": new Date(),
@@ -16,8 +18,12 @@ const updatedPayment=await paymentsCollection.updateOne({email:email,"allPayment
         "allPayments.$.transId": transId
     }
 },{upsert:true})
-if(updatedPayment?.modified){
-    
+if(updatedPayment?.acknowledged===true){
+    await appointmentCollection.updateOne({paymentId:paymentId},{
+        $set:{
+            status:'paid'
+        }
+    },{upsert:true})
 }
 return NextResponse.redirect('http://localhost:3000/dashboard/user/myPayments/paymentsSuccessful')
 // return response.json({success:true,message:'successful payment',data:updatedPayment})

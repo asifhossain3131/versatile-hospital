@@ -1,7 +1,7 @@
 'use client'
 import { Card, Typography } from "@material-tailwind/react";
  
-const TABLE_HEAD = ["Patient name", "Doctor name", "Department", "Date","Type","Status","Payment"];
+const TABLE_HEAD = ["Patient name", "Doctor name", "Department", "Date","Type","Status"];
 
 type AppointmentInfo={
     _id:string
@@ -67,11 +67,6 @@ const MyAppointmentsTable = ({appointments}:any) => {
                 <td className={`${classes} bg-blue-gray-50/50`}>
                 <Typography variant="small" color="blue-gray" className={`font-normal ${status==='pending'?'text-red-600':'text-green-600'}`}>
                     {status}
-                  </Typography>
-                </td>
-                <td className={classes}>
-                  <Typography  variant="small" color="blue-gray" className="font-medium">
-                    <button className="font-semibold">Pay</button>
                   </Typography>
                 </td>
               </tr>
