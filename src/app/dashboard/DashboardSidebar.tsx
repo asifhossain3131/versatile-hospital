@@ -6,7 +6,7 @@ import Link from "next/link";
 const DashboardSidebar = () => {
 
   const{user}:any=useAuth()
-  const role:string='doctor'
+  const role:string='admin'
   const userInfos=[
     {
       img:'https://cdn-icons-png.flaticon.com/128/942/942810.png',
