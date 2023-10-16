@@ -102,8 +102,8 @@ const DashboardSidebar = () => {
         </Link>
             {
               role==='user' && userInfos.map((info,i)=>
-              <Link href={info?.path}>
-                <li key={i} className="flex items-center gap-x-2 px-3 py-2 hover:bg-blue-gray-400 rounded">
+              <Link key={i} href={info?.path}>
+                <li className="flex items-center gap-x-2 px-3 py-2 hover:bg-blue-gray-400 rounded">
                   <img src={info.img} alt=""  className="w-[30px]"/>
                   <span className="hidden lg:inline-block">{info.title}</span>
                 </li>
@@ -112,8 +112,8 @@ const DashboardSidebar = () => {
             }
             {
               role==='admin' && adminInfos.map((info,i)=>
-              <Link href={info?.path}>
-                <li key={i} className="flex items-center gap-x-2 px-3 py-2 hover:bg-blue-gray-400 rounded">
+              <Link key={i} href={info?.path}>
+                <li  className="flex items-center gap-x-2 px-3 py-2 hover:bg-blue-gray-400 rounded">
                   <img src={info.img} alt=""  className="w-[30px]"/>
                   <span className="hidden lg:inline-block">{info.title}</span>
                 </li>
@@ -122,8 +122,8 @@ const DashboardSidebar = () => {
             }
             {
               role==='doctor' && doctorInfos.map((info,i)=>
-              <Link href={info?.path}>
-                <li key={i} className="flex items-center gap-x-2 px-3 py-2 hover:bg-blue-gray-400 rounded">
+              <Link key={i} href={info?.path}>
+                <li  className="flex items-center gap-x-2 px-3 py-2 hover:bg-blue-gray-400 rounded">
                   <img src={info.img} alt=""  className="w-[30px]"/>
                   <span className="hidden lg:inline-block">{info.title}</span>
                 </li>

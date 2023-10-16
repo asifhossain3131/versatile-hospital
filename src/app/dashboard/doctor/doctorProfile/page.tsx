@@ -16,7 +16,7 @@ type Inputs = {
   availableDaysAndTime:string
 }
 
-const page = () => {
+const DoctorProfilePage = () => {
     const allDepartments=getAllDepartments()
     const doctorDegrees=['MD','PhD','DDS','DPM']
     const [department,setDepartment]=useState('')
@@ -88,4 +88,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default DoctorProfilePage;
