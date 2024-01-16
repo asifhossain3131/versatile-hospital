@@ -9,7 +9,7 @@ const useProfile = (email:string) => {
       isLoading,
       isError: error,
       mutate
-    }
+     } 
 };
 
 export default useProfile;

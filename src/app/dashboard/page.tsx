@@ -28,7 +28,7 @@ interface TargetUser {
   gender:string
   email:string
 }
-const Dashboard = () => {
+const Dashboard = () => { 
   const { user,profileUpdate }: any = useAuth();
 const{currentUser,mutate,isLoading}=useProfile(user?.email)
 const targetUser=currentUser?.user
