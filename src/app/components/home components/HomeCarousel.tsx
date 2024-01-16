@@ -1,6 +1,7 @@
 'use client'
 import React from 'react';
 import { Carousel, Typography, Button } from "@material-tailwind/react";
+import Image from 'next/image';
 
 const HomeCarousel = () => {
    const allSliders= [
@@ -41,7 +42,7 @@ const HomeCarousel = () => {
             {
           allSliders.map(({id,title,description,img})=>
           <div key={id} className="relative h-full w-full">
-        <img src={img} alt="" className='w-full h-[500px]'/>
+        <Image width={400} height={400} src={img} alt="" className='w-full h-[500px]'/>
           <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/75">
             <div className="w-3/4 text-center md:w-2/4">
               <Typography

@@ -2,6 +2,7 @@
 import { Button } from '@material-tailwind/react';
 import useAuth from '@/hooks/useAuth';
 import { toast } from 'react-toastify';
+import Image from 'next/image';
 
 const SocialLoginButton = () => {
     const{googleLogin}:any=useAuth()
@@ -35,7 +36,7 @@ const SocialLoginButton = () => {
         className="flex items-center gap-3 justify-center"
         onClick={handleGoogleLogin}
       >
-        <img src="https://cdn-icons-png.flaticon.com/128/300/300221.png" alt="metamask" className="h-6 w-6" />
+        <Image src="https://cdn-icons-png.flaticon.com/128/300/300221.png" alt="metamask" className="h-6 w-6" />
         Continue with Google
       </Button>
     );

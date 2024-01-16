@@ -21,7 +21,7 @@ const DepartmentSearchCard = () => {
       <CardBody>
         <MagnifyingGlassCircleIcon className="text-blue-500 w-12 h-12 mb-4" />
         <Typography variant="h5" color="blue-gray" className="mb-4">
-          I'm looking for a consultant
+          I am looking for a consultant
         </Typography>
         <div className="w-full">
       <Select label="Search by speciality">

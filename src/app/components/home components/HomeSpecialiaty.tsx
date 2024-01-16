@@ -74,7 +74,7 @@ const HomeSpecialiaty = () => {
     <div className='relative'>
         <Image className='h-[450px]' alt='nurse' src='https://img.freepik.com/free-photo/side-view-doctors-posing_23-2148453492.jpg?size=626&ext=jpg&ga=GA1.1.663062170.1681230249&semt=ais' width={400} height={300}></Image>
         <div className='w-10/12 mx-auto flex items-center gap-4 bg-white absolute bottom-4 left-2'>
-            <img src="https://cdn-icons-png.flaticon.com/128/9297/9297719.png" alt="" />
+            <Image width={400} height={400} src="https://cdn-icons-png.flaticon.com/128/9297/9297719.png" alt="ambulance" />
             <div>
                 <h1 className='font-semibold text-lg'>Ambulance Service</h1>
                 <h3 className='font-bold text-2xl'>Call: 986543678</h3>

@@ -6,6 +6,7 @@ import {
     Typography,
     Button,
   } from "@material-tailwind/react";
+import Image from "next/image";
 import Link from "next/link";
 
 const DoctorCard = ({doctor}:any) => {
@@ -14,7 +15,9 @@ const DoctorCard = ({doctor}:any) => {
       <Link href={`/findDoctors/${department}/${_id}`}>
         <Card className="flex-row w-96 h-[230px] rounded-none border hover:bg-gray-200">
         <CardHeader shadow={false} floated={false} className="w-2/5 shrink-0 m-0 rounded-none border">
-          <img 
+          <Image
+          width={400}
+          height={400} 
             src={image}
             alt="image" 
             className="w-full h-full object-cover"

@@ -2,6 +2,7 @@
 import { Avatar } from "@material-tailwind/react";
 import useAuth from "@/hooks/useAuth";
 import Link from "next/link";
+import Image from "next/image";
 
 const DashboardSidebar = () => {
 
@@ -96,7 +97,7 @@ const DashboardSidebar = () => {
           <ul className="mt-8 font-medium">
         <Link href={'/dashboard'}>
         <li  className="flex items-center gap-x-2 px-3 py-2 hover:bg-blue-gray-400 rounded">
-                  <img src='https://cdn-icons-png.flaticon.com/128/1144/1144760.png' alt=""  className="w-[30px]"/>
+                  <Image width={400} height={400} src='https://cdn-icons-png.flaticon.com/128/1144/1144760.png' alt="dashboard"  className="w-[30px]"/>
                   <span className="hidden lg:inline-block">My Profile</span>
                 </li>
         </Link>
@@ -104,7 +105,7 @@ const DashboardSidebar = () => {
               role==='user' && userInfos.map((info,i)=>
               <Link key={i} href={info?.path}>
                 <li className="flex items-center gap-x-2 px-3 py-2 hover:bg-blue-gray-400 rounded">
-                  <img src={info.img} alt=""  className="w-[30px]"/>
+                  <Image width={400} height={400} src={info.img} alt="dashboard"  className="w-[30px]"/>
                   <span className="hidden lg:inline-block">{info.title}</span>
                 </li>
               </Link>
@@ -114,7 +115,7 @@ const DashboardSidebar = () => {
               role==='admin' && adminInfos.map((info,i)=>
               <Link key={i} href={info?.path}>
                 <li  className="flex items-center gap-x-2 px-3 py-2 hover:bg-blue-gray-400 rounded">
-                  <img src={info.img} alt=""  className="w-[30px]"/>
+                  <Image width={400} height={400} src={info.img} alt="dashboard"  className="w-[30px]"/>
                   <span className="hidden lg:inline-block">{info.title}</span>
                 </li>
               </Link>
@@ -124,18 +125,18 @@ const DashboardSidebar = () => {
               role==='doctor' && doctorInfos.map((info,i)=>
               <Link key={i} href={info?.path}>
                 <li  className="flex items-center gap-x-2 px-3 py-2 hover:bg-blue-gray-400 rounded">
-                  <img src={info.img} alt=""  className="w-[30px]"/>
+                  <Image width={400} height={400} src={info.img} alt="dashboard"  className="w-[30px]"/>
                   <span className="hidden lg:inline-block">{info.title}</span>
                 </li>
               </Link>
                 )
             }
               <li  className="flex items-center gap-x-2 px-3 py-2 hover:bg-blue-gray-400 rounded">
-                  <img src='https://cdn-icons-png.flaticon.com/128/9208/9208320.png' alt=""  className="w-[30px]"/>
+                  <Image width={400} height={400} src='https://cdn-icons-png.flaticon.com/128/9208/9208320.png' alt="dashboard"  className="w-[30px]"/>
                   <span className="hidden lg:inline-block">Logout</span>
                 </li>
               <li className="flex items-center gap-x-2 px-3 py-2 hover:bg-blue-gray-400 rounded">
-                  <img src='https://cdn-icons-png.flaticon.com/128/93/93634.png' alt=""  className="w-[30px]"/>
+                  <Image width={400} height={400} src='https://cdn-icons-png.flaticon.com/128/93/93634.png' alt="dashboard"  className="w-[30px]"/>
                   <span className="hidden lg:inline-block">Go Back</span>
                 </li>
           </ul>
