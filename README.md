@@ -1,5 +1,8 @@
 # Versatile Hospital
 
+   ## Live Link
+Hosted in Vercel -> [Versatile Hospital](https://versatile-hospital.vercel.app/)
+
 ## Technologies Used
 - Next Js
 - TypeScript
