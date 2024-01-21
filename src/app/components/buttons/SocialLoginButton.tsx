@@ -36,7 +36,7 @@ const SocialLoginButton = () => {
         className="flex items-center gap-3 justify-center"
         onClick={handleGoogleLogin}
       >
-        <Image src="https://cdn-icons-png.flaticon.com/128/300/300221.png" alt="metamask" className="h-6 w-6" />
+        <Image width={400} height={400} src="https://cdn-icons-png.flaticon.com/128/300/300221.png" alt="metamask" className="h-6 w-6" />
         Continue with Google
       </Button>
     );

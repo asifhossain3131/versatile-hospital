@@ -11,6 +11,7 @@ import {
 import useAuth from "@/hooks/useAuth";
 import { useForm, SubmitHandler } from "react-hook-form"
 import { toast } from "react-toastify";
+import Link from "next/link";
 
 type Props={
     title:string
@@ -81,9 +82,10 @@ const SeconderyButton = ({title,doctorName,department,id}:Props) => {
           <Input  variant="static" value={department} placeholder="Department" />
           </div>
           <Textarea {...register("note")} variant="static" placeholder="Add a note" />
-          <Button type="submit" variant="gradient" color="green" className="rounded-none mt-2">
+          <Button disabled={!user} type="submit" variant="gradient" color="green" className="rounded-none mt-2">
           <span>Take appointment</span>
         </Button>
+        {!user && <p className="text-red-500">Please <Link href={'/login'} className="text-red-700 font-semibold cursor-pointer hover:text-blue-700">login</Link> to make an appointment</p>}
         </form>
       </DialogBody>
     </Dialog>

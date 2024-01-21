@@ -21,5 +21,5 @@ try {
  
 
 export const config = {
-  matcher:  ['/findDoctors/:path*', '/dashboard/:path*'],
+  matcher:  [ '/dashboard/:path*'],
 }
