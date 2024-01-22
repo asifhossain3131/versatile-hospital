@@ -80,13 +80,13 @@ const HomeBlogs = () => {
     return (
         <div>
             <SectionTitle title='health blogs' subtitle='we understand your concern about health issue and here we offer you some solutions'></SectionTitle>
-            <div className='grid grid-cols-1 lg:grid-cols-3 gap-4 mx-8'>
+            <div className='grid grid-cols-1 lg:grid-cols-3 gap-4 mx-4 lg:mx-8'>
                {
                 allBlogs.map(({id,title,category,img,author,date,published_in,full_blog})=>
-                <div key={id} className='w-96 shadow-lg p-4'>
+                <div key={id} className='w-60 lg:w-96 shadow-lg p-4'>
                      <Image alt='blog' width={384} height={350} src={img}></Image>
                       <Chip variant="ghost" value={category} className='w-32 text-center my-4'/>
-                      <div className='flex items-center justify-between'>
+                      <div className='flex flex-col lg:flex-row items-center justify-between'>
                         <div className='flex items-center gap-x-2 text-xs'>
                            <UserIcon className='w-[15px]'></UserIcon>
                            <span>{author}</span>
@@ -101,7 +101,7 @@ const HomeBlogs = () => {
                         </div>
                       </div>
                       <div className='mt-2'>
-                        <h1 className='text-2xl'>{title}</h1>
+                        <h1 className='text-md lg:text-2xl'>{title}</h1>
                         <button onClick={()=>handleModal(id)} className=" text-blue-800 font-medium flex text-sm items-center gap-x-2">View Blog <ArrowLongRightIcon strokeWidth={2} className="h-5 w-5" /></button>
                        </div>
                 </div>
